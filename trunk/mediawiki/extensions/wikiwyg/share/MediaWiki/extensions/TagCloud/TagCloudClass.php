@@ -34,17 +34,15 @@ class TagCloud {
 		}
 
 		//sort tag array by key (tag name)
-		if ($this->tags_highest_count == 0) return ;
+		if ($this->tags_highest_count == 0) return;
 		ksort($this->tags);
 		if ($this->tags_highest_count == 1) {
-			$coef = $this->tags_max_pts - $this->tags_min_pts ;	
+			$coef = $this->tags_max_pts - $this->tags_min_pts;
 		} else {
-			$coef = ($this->tags_max_pts - $this->tags_min_pts)/(($this->tags_highest_count-1) * 2) ;
+			$coef = ($this->tags_max_pts - $this->tags_min_pts)/(($this->tags_highest_count-1) * 2);
 		}
 		foreach ($this->tags as $tag => $att) {
-			$this->tags[$tag]["size"] = $this->tags_min_pts + ($this->tags[$tag]["count"] - 1) * $coef ;
+			$this->tags[$tag]["size"] = $this->tags_min_pts + ($this->tags[$tag]["count"] - 1) * $coef;
 		}
 	 }
 }
-
-?>

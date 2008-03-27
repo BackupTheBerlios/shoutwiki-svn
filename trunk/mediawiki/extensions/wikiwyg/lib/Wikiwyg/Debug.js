@@ -3,7 +3,7 @@ This Wikiwyg mode supports a textarea editor with toolbar buttons.
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation 
+    Copyright © 2005 Socialtext Corporation 
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.
@@ -72,4 +72,3 @@ klass.dump_object_into_screen = function(o) {
 }
 
 })();
-

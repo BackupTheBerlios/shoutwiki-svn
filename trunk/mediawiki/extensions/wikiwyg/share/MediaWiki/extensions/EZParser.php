@@ -1,6 +1,5 @@
 <?php
 
-
 # Not a valid entry point, skip unless MEDIAWIKI is defined
 if (defined('MEDIAWIKI')) {
 $wgExtensionFunctions[] = 'wfEZParser';
@@ -14,8 +13,7 @@ global $IP;
 require_once( $IP.'/includes/SpecialPage.php' );
 
 #class EZParser extends UnlistedSpecialPage
-class EZParser extends SpecialPage
-{
+class EZParser extends SpecialPage {
 	function EZParser() {
 #		UnlistedSpecialPage::UnlistedSpecialPage('EZParser');
 		SpecialPage::SpecialPage('EZParser');
@@ -76,4 +74,3 @@ $wgMessageCache->addMessage( 'ezparser', 'Simple parser test' );
 
 }
 } # End if(defined MEDIAWIKI)
-

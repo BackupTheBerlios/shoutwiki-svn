@@ -1,6 +1,5 @@
-
 /*
- @author Bartek Lapinski
+ @author Bartek Łapiński
  @copyright Copyright © 2007, Wikia Inc.
  @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
 */
@@ -719,4 +718,3 @@ proto.saveChanges = function () {
 	WikiwygInstance.getCategories () ;
 	document.editform.submit() ;
 }
-

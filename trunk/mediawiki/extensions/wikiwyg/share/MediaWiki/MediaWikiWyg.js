@@ -2,22 +2,22 @@
 // BEGIN ../../lib/Wikiwyg/Init.js
 
 /*==============================================================================
-Initial stuff by Bartek Lapinski
+Initial stuff by Bartek Łapiński
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation
+    Copyright © 2005 Socialtext Corporation
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.
 
-    Copyright (c) 2007, Wikia Inc.
+    Copyright © 2007, Wikia Inc.
 
 CHANGES AUTHOR:
 
-    Bartek Lapinski <bartek@wikia.com>
+    Bartek Łapiński <bartek@wikia.com>
 
-    Copyright (c) 2007, Wikia Inc.
+    Copyright © 2007, Wikia Inc.
 
 Wikiwyg is free software.
 
@@ -45,7 +45,7 @@ function confirmExit(){
 }
 }
 
-/* Yahoo stuff - Bartek Lapinski */
+/* Yahoo stuff - Bartek Łapiński */
 YAHOO.namespace('Wikia');
 var Event = YAHOO.util.Event ;
 
@@ -114,7 +114,7 @@ AUTHORS:
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation
+    Copyright © 2005 Socialtext Corporation
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.
@@ -122,9 +122,9 @@ COPYRIGHT:
 
 CHANGES AUTHOR:
 
-    Bartek Lapinski <bartek@wikia.com>
+    Bartek Łapiński <bartek@wikia.com>
 
-    Copyright (c) 2007, Wikia Inc.
+    Copyright © 2007, Wikia Inc.
 
 Wikiwyg is free software.
 
@@ -789,16 +789,16 @@ This Wikiwyg mode supports a textarea editor with toolbar buttons.
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation
+    Copyright © 2005 Socialtext Corporation
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.
 
 CHANGES AUTHOR:
 
-    Bartek Lapinski <bartek@wikia.com>
+    Bartek Łapiński <bartek@wikia.com>
 
-    Copyright (c) 2007, Wikia Inc.
+    Copyright © 2007, Wikia Inc.
 
 Wikiwyg is free software.
 
@@ -1188,7 +1188,7 @@ if (!window.ActiveXObject && window.XMLHttpRequest) {
 //------------------------------------------------------------------------------
 
 /*
-Copyright (c) 2005 JSON.org
+Copyright © 2005 JSON.org
 */
 var JSON = function () {
     var m = {
@@ -1211,7 +1211,7 @@ var JSON = function () {
                 if (/["\\\x00-\x1f]/.test(x)) {
                     x = x.replace(/([\x00-\x1f\\"])/g, function(a, b) {
                         var c = m[b];
-                        if (c) {
+                        if © {
                             return c;
                         }
                         c = b.charCodeAt();
@@ -1269,7 +1269,7 @@ var JSON = function () {
             }
         };
     return {
-        copyright: '(c)2005 JSON.org',
+        copyright: '©2005 JSON.org',
         license: 'http://www.crockford.com/JSON/license.html',
         stringify: function (v) {
             var f = s[typeof v];
@@ -1298,16 +1298,16 @@ This Wikiwyg mode supports a textarea editor with toolbar buttons.
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation
+    Copyright © 2005 Socialtext Corporation
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.
 
 CHANGES AUTHOR:
 
-    Bartek Lapinski <bartek@wikia.com>
+    Bartek Łapiński <bartek@wikia.com>
 
-    Copyright (c) 2007, Wikia Inc.
+    Copyright © 2007, Wikia Inc.
 
 
 Wikiwyg is free software.
@@ -1379,16 +1379,16 @@ This Wikiwyg class provides toolbar support
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation
+    Copyright © 2005 Socialtext Corporation
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.
 
 CHANGES AUTHOR:
 
-    Bartek Lapinski <bartek@wikia.com>
+    Bartek Łapiński <bartek@wikia.com>
 
-    Copyright (c) 2007, Wikia Inc.
+    Copyright © 2007, Wikia Inc.
 
 Wikiwyg is free software.
 
@@ -2044,16 +2044,16 @@ This Wikiwyg mode supports a preview of current changes
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation
+    Copyright © 2005 Socialtext Corporation
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.
 
 CHANGES AUTHOR:
 
-    Bartek Lapinski <bartek@wikia.com>
+    Bartek Łapiński <bartek@wikia.com>
 
-    Copyright (c) 2007, Wikia Inc.
+    Copyright © 2007, Wikia Inc.
 
 Wikiwyg is free software.
 
@@ -2113,16 +2113,16 @@ This Wikiwyg mode supports a textarea editor with toolbar buttons.
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation
+    Copyright © 2005 Socialtext Corporation
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.
 
 CHANGES AUTHOR:
 
-    Bartek Lapinski <bartek@wikia.com>
+    Bartek Łapiński <bartek@wikia.com>
 
-    Copyright (c) 2007, Wikia Inc.
+    Copyright © 2007, Wikia Inc.
 
 Wikiwyg is free software.
 
@@ -3835,16 +3835,16 @@ This Wikiwyg mode supports a DesignMode wysiwyg editor with toolbar buttons
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation
+    Copyright © 2005 Socialtext Corporation
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.
 
 CHANGES AUTHOR:
 
-    Bartek Lapinski <bartek@wikia.com>
+    Bartek Łapiński <bartek@wikia.com>
 
-    Copyright (c) 2007, Wikia Inc.
+    Copyright © 2007, Wikia Inc.
 
 Wikiwyg is free software.
 
@@ -4235,16 +4235,16 @@ This Wikiwyg mode supports a simple HTML editor
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation
+    Copyright © 2005 Socialtext Corporation
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.
 
 CHANGES AUTHOR:
 
-    Bartek Lapinski <bartek@wikia.com>
+    Bartek Łapiński <bartek@wikia.com>
 
-    Copyright (c) 2007, Wikia Inc.
+    Copyright © 2007, Wikia Inc.
 
 Wikiwyg is free software.
 
@@ -4511,7 +4511,7 @@ proto.editMode = function() {
     	/* an open section exists, ask whether to abandon it or not */
 	/* todo check if we have any changes */
 	var c = confirm ("Another section is already opened. Do you wish to discard changes and open a new one?") ;
-	if (c) {
+	if © {
 		Wikiwyg.MediaWiki.instance.cancelEdit () ;
 	} else {
 		return ;

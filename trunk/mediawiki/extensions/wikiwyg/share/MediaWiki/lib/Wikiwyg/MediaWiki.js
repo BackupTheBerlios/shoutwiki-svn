@@ -7,7 +7,7 @@
 // XXX CrappyHacks to get around mediawiki/config stuff.
 // These hacks should be removed eventually.
 
-// This fixes some mediawiki js error that pops up at various times.
+// This fixes some MediaWiki JS error that pops up at various times.
 if (typeof(LivePreviewInstall) == 'undefined')
     LivePreviewInstall = function() {};
 
@@ -495,7 +495,7 @@ proto.enableMessage = function () {
         this.toolbar_message = document.createElement("div");
         this.div.parentNode.insertBefore(this.toolbar_message,
                                          this.div);
-        /*
+   /*
          Make sure the div and the message occupy same height on
          screen to prevent editing area from being jumpy.
         */

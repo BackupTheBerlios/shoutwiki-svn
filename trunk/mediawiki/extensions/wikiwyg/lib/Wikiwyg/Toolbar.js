@@ -3,7 +3,7 @@ This Wikiwyg class provides toolbar support
 
 COPYRIGHT:
 
-    Copyright (c) 2005 Socialtext Corporation 
+    Copyright © 2005 Socialtext Corporation 
     655 High Street
     Palo Alto, CA 94301 U.S.A.
     All rights reserved.

@@ -1,4 +1,3 @@
-
 /*
 * @author Bartek Łapiński
 * @copyright Copyright © 2007, Wikia Inc.
@@ -515,4 +514,3 @@ link: ['bound_phrase', '[[', ']]'],
       table: ['line_alone', '{ | A | B | C |\n|   |   |   |\n|   |   |   | }']
 	     }
 }
-

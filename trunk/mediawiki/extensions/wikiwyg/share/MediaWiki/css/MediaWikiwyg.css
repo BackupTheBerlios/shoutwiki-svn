@@ -1,13 +1,13 @@
 .wikiwyg_toolbar {
-    background: #F0F0EE none repeat scroll 0% ;
-    border: 1px solid #DCDCDC ;
+    background: #F0F0EE none repeat scroll 0%;
+    border: 1px solid #DCDCDC;
     letter-spacing: 0;
-    padding: 2px ;
+    padding: 2px;
 }
 
 span.wikiwyg_control_link a {
-    padding-right: 4px ;
-    padding-left: 4px ;
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 .wikiwyg_button {
@@ -70,50 +70,49 @@ span.wikiwyg_control_link a {
 }
 
 #wikiwyg_lower_wrapper label, #category_wrapper label {
-	display:block;
-	float:left;
-	width:200px;
+	display: block;
+	float: left;
+	width: 200px;
 }
 
 #wikiwyg_lower_wrapper .no-float, #category_wrapper .no_float {
-	float: none ;
-	display: inline ;
+	float: none;
+	display: inline;
 }
 
 #wikiwyg_lower_wrapper .editpage-tier, #category_wrapper .editpage_tier {
-	clear:both;
-	overflow:auto;
+	clear: both;
+	overflow: auto;
 }
 
 #wikiwyg_lower_wrapper table, #category_wrapper table {
-	width: 100% ;
+	width: 100%;
 }
 
 #wikiwyg_lower_wrapper .editpage_header, #category_wrapper .editpage_header {
-	vertical-align: top ;
-	font-weight: bold ;
-	width: 14% ;
+	vertical-align: top;
+	font-weight: bold;
+	width: 14%;
 }
 
 #wikiwyg_lower_wrapper textarea, #category_wrapper textarea {
-	width: 100% ;
+	width: 100%;
 }
 
 #wikiwyg_lower_wrapper li, #category_wrapper li  {
-	margin-left: 30px ;
-	vertical-align: middle ;
-	float: left ;
+	margin-left: 30px;
+	vertical-align: middle;
+	float: left;
 }
 
 #wikiwyg_lower_wrapper .last, #category_wrapper .last {
-	clear: both ;
-	float: none ;
-       	list-style-image: none ;
-       	list-style-position: outside ;
-       	list-style-type: none ;
+	clear: both;
+	float: none;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
 }
 
 #wikiwyg_lower_wrapper .editpage-inside, #category_wrapper .editpage_inside {
 	float:left;
 }
-
