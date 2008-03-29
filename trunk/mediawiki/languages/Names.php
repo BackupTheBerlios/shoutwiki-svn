@@ -98,7 +98,7 @@
 	'gl' => 'Galego',		# Galician
 	'glk' => 'گیلکی',	# Gilaki
 	'gn' => 'Avañe\'ẽ',	# Guaraní, Paraguayan
-	'got' => '𐌲𐌿𐍄𐌹𐍃𐌺',	# Gothic
+	'got' => '̲̹̺̿̈́̓',	# Gothic
 	'grc' => 'Ἀρχαία ἑλληνικὴ', # Ancient Greece
 	'gsw' => 'Alemannisch',	# Alemannic
 	'gu' => 'ગુજરાતી',	# Gujarati
@@ -321,6 +321,7 @@
 	'xal' => 'Хальмг',		# Kalmyk-Oirat (Kalmuk, Kalmuck, Kalmack, Qalmaq, Kalmytskii Jazyk, Khal:mag, Oirat, Volga Oirat, European Oirat, Western Mongolian)
 	'xh' => 'isiXhosa',		# Xhosan
 	'xmf' => 'მარგალური',	# Mingrelian
+	'xx-piglatin' => 'Igpay Atinlay' # Pig Latin 
 	'ydd' => 'מיזרח־ייִדיש', # Eastern Yiddish
 	'yi' => 'ייִדיש',	# Yiddish
 	'yo' => 'Yorùbá',	# Yoruba
