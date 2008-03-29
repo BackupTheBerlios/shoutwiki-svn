@@ -4,12 +4,9 @@
  *  
  * @addtogroup Language 
  *
- * @author Pinky <pinky@shoutwiki.com>
- * @author Jack_Phoenix <jack@shoutwiki.com>
- *
- * translations also made by:
- *  - Phil_E
- *  - Others
+ * @author Pinky <nathaniel7775@yahoo.com>
+ * @author Jack Phoenix <wikia.jack@gmail.com>
+ * @author Phil E <reflection.insanity@gmail.com>
  *
  *
 */ 
@@ -98,7 +95,7 @@ $datePreferences = array(
 	'ymd',
 	'ISO 8601',
 );
-*/
+
 /**
  * The date format to use for generated dates in the user interface.
  * This may be one of the above date preferences, or the special value
@@ -203,8 +200,10 @@ $magicWords = array(
 	'namespacee'             => array( 1,    'NAMESPACEE', 'AMENAYACEESPAY', 'AMESPACEENAY'),
 	'talkspace'              => array( 1,    'TALKSPACE', 'ALKTAYACESPAY', 'ALKSPACETAY'              ),
 	'talkspacee'             => array( 1,    'TALKSPACEE', 'ALKTAYACEESPAY', 'ALKSPACEETAY'             ),
-	'subjectspace'           => array( 1,    'SUBJECTSPACE', 'ARTICLESPACE', 'UBJECTSAYACESPAY', 'ARTICLEWAYACESPAY', 'UBJECTSPACESAY', 'ARTICLESPACEWAY' ),
-	'subjectspacee'          => array( 1,    'SUBJECTSPACEE', 'ARTICLESPACEE', 'UBJECTSAYACEESPAY', 'ARTICLEWAYACEESPAY', 'UBJECTSPACEESAY', 'ARTICLESPACEEWAY' ),
+	'subjectspace'           => array( 1,    'SUBJECTSPACE', 'ARTICLESPACE', 'UBJECTSAYACESPAY', 'ARTICLEWAYACESPAY', 'UBJECTSPACESAY', 'ARTICLESPACEWAY' 
+),
+	'subjectspacee'          => array( 1,    'SUBJECTSPACEE', 'ARTICLESPACEE', 'UBJECTSAYACEESPAY', 'ARTICLEWAYACEESPAY', 'UBJECTSPACEESAY', 
+'ARTICLESPACEEWAY' ),
 	'fullpagename'           => array( 1,    'FULLPAGENAME', 'ULLFAYAGEPAYAMENAY', 'ULLPAGENAMEFAY'           ),
 	'fullpagenamee'          => array( 1,    'FULLPAGENAMEE', 'ULLFAYAGEPAYAMEENAY', 'ULLPAGENAMEEFAY'          ),
 	'subpagename'            => array( 1,    'SUBPAGENAME', 'UBSAYAGEPAYAMENAY', 'UBPAGENAMESAY'            ),
@@ -213,8 +212,10 @@ $magicWords = array(
 	'basepagenamee'          => array( 1,    'BASEPAGENAMEE', 'ASEBAYAGEPAYAMEENAY', 'ASEPAGENAMEEBAY'          ),
 	'talkpagename'           => array( 1,    'TALKPAGENAME', 'ALKTAYAGEPAYAMENAY', 'ALKPAGENAMETAY'           ),
 	'talkpagenamee'          => array( 1,    'TALKPAGENAMEE', 'ALKTAYAGEPAYAMEENAY', 'ALKPAGENAMEETAY'          ),
-	'subjectpagename'        => array( 1,    'SUBJECTPAGENAME', 'ARTICLEPAGENAME', 'UBJECTSAYAGEPAYAMENAY', 'ARTICLEWAYAGEPAYAMENAY', 'UBJECTPAGENAMESAY', 'ARTICLEPAGENAMEWAY' ),
-	'subjectpagenamee'       => array( 1,    'SUBJECTPAGENAMEE', 'ARTICLEPAGENAMEE', 'UBJECTSAYAGEPAYAMEENAY', 'ARTICLEWAYAGEPAYAMEENAY', 'UBJECTPAGENAMEESAY', 'ARTICLEPAGENAMEEWAY' ),
+	'subjectpagename'        => array( 1,    'SUBJECTPAGENAME', 'ARTICLEPAGENAME', 'UBJECTSAYAGEPAYAMENAY', 'ARTICLEWAYAGEPAYAMENAY', 
+'UBJECTPAGENAMESAY', 'ARTICLEPAGENAMEWAY' ),
+	'subjectpagenamee'       => array( 1,    'SUBJECTPAGENAMEE', 'ARTICLEPAGENAMEE', 'UBJECTSAYAGEPAYAMEENAY', 'ARTICLEWAYAGEPAYAMEENAY', 
+'UBJECTPAGENAMEESAY', 'ARTICLEPAGENAMEEWAY' ),
 	'msg'                    => array( 0,    'MSG:', 'MSGAY:'                   ),
 	'subst'                  => array( 0,    'SUBST:', 'UBSTSAY:' ),
 	'msgnw'                  => array( 0,    'MSGNW:', 'MSGNWAY:'                 ),
@@ -247,7 +248,8 @@ $magicWords = array(
 	'servername'             => array( 0,    'SERVERNAME', 'ERVERSAYAMENAY', 'ERVERNAMESAY'             ),
 	'scriptpath'             => array( 0,    'SCRIPTPATH', 'IPTSCRAYATHPAY', 'IPTPATHSCRAY'             ),
 	'grammar'                => array( 0,    'GRAMMAR:', 'AMMARGRAY:'               ),
-	'notitleconvert'         => array( 0,    '__NOTITLECONVERT__', '__NOTC__', '__ONAYTC__', '__OTCNAY__', '__ONAYITLETAYONVERTCAY__', '__OTITLECONVERTNAY__'),
+	'notitleconvert'         => array( 0,    '__NOTITLECONVERT__', '__NOTC__', '__ONAYTC__', '__OTCNAY__', '__ONAYITLETAYONVERTCAY__', 
+'__OTITLECONVERTNAY__'),
 	'nocontentconvert'       => array( 0,    '__NOCONTENTCONVERT__', '__NOCC__', '__ONAYONTENTCAYONVERTCAY__', 'OCONTENTCONVERTNAY'),
 	'currentweek'            => array( 1,    'CURRENTWEEK', 'URRENTCAYEEKWAY', 'URRENTWEEKCAY'            ),
 	'currentdow'             => array( 1,    'CURRENTDOW', 'URRENTCAYDOW', 'URRENTDOWCAY'             ),
@@ -278,14 +280,15 @@ $magicWords = array(
 	'directionmark'          => array( 1,    'DIRECTIONMARK', 'DIRMARK', 'IRECTIONDAYARKMAY', 'DIRARKMAY', 'IRECTIONMARKDAY', 'IRMARKDAY' ),
 	'language'               => array( 0,    '#LANGUAGE:', '#ANGUAGELAY:'             ),
 	'contentlanguage'        => array( 1,    'CONTENTLANGUAGE', 'CONTENTLANG', 'ONTENTCAYANGUAGELAY', 'ONTENTLANGCAY' ),
-	'pagesinnamespace'       => array( 1,    'PAGESINNAMESPACE:', 'PAGESINNS:', 'AGESPAYINWAYAMENAYACESPAY:', 'AGESPAYINWAYNS:', 'AGESINNAMESPACEPAY:', 'AGESINNSPAY:' ),
+	'pagesinnamespace'       => array( 1,    'PAGESINNAMESPACE:', 'PAGESINNS:', 'AGESPAYINWAYAMENAYACESPAY:', 'AGESPAYINWAYNS:', 'AGESINNAMESPACEPAY:', 
+'AGESINNSPAY:' ),
 	'numberofadmins'         => array( 1,    'NUMBEROFADMINS', 'UMBERNAYOFWAYADMINSWAY', 'UMBEROFADMINSNAY'         ),
 	'formatnum'              => array( 0,    'FORMATNUM', 'ORMATFAYNUM', 'ORMATNUMFAY', 'ORMATFAYUMNAY'              ),
 	'padleft'                => array( 0,    'PADLEFT', 'ADPAYEFTLAY', 'ADLEFTPAY'               ),
 	'padright'               => array( 0,    'PADRIGHT', 'ADPAYIGHTRAY', 'ADRIGHTPAY'               ),
 	'special'                => array( 0,    'special', 'ecialspay'              ),
-	'defaultsort'            => array( 1,    'DEFAULTSORT:', 'DEFAULTSORTKEY:', 'DEFAULTCATEGORYSORT:', 'EFAULTDAYORTSAY:', 'EFAULTDAYORTSAYEYKAY:', 'EFAULTDAYATEGORYCAYORTSAY:', 
-'EFAULTSORTDAY:', 'EFAULTSORTKEYDAY:', 'EFAULTCATEGORYSORTDAY:' ),
+	'defaultsort'            => array( 1,    'DEFAULTSORT:', 'DEFAULTSORTKEY:', 'DEFAULTCATEGORYSORT:', 'EFAULTDAYORTSAY:', 'EFAULTDAYORTSAYEYKAY:', 
+'EFAULTDAYATEGORYCAYORTSAY:', 'EFAULTSORTDAY:', 'EFAULTSORTKEYDAY:', 'EFAULTCATEGORYSORTDAY:' ),
 );
 
 /**
@@ -389,7 +392,8 @@ $messages = array(
 
 # User preference toggles
 'tog-underline'               => 'Underlineway inkslay:',
-'tog-highlightbroken'         => 'Ormatfay okenbray inkslay <a href="" class="new">ikelay isthay</a> (alternativeway: ikelay isthay<a href="" class="internal">?</a>).',
+'tog-highlightbroken'         => 'Ormatfay okenbray inkslay <a href="" class="new">ikelay isthay</a> (alternativeway: ikelay isthay<a href="" 
+class="internal">?</a>).',
 'tog-justify'                 => 'Ustifyjay aragraphspay',
 'tog-hideminor'               => 'Idehay inormay editsway inway ecentray angeschay',
 'tog-extendwatchlist'         => 'Expandway atchlistway otay owshay allway applicableway angeschay',
@@ -427,13 +431,13 @@ $messages = array(
 'tog-nolangconversion'        => 'Isableday ariantsvay onversioncay',
 'tog-ccmeonemails'            => 'Endsay emay opiescay ofway emailsway Iway endsay otay otherway usersway',
 'tog-diffonly'                => "On'tday owshay agepay ontentcay elowbay iffsday",
- 
+
 'underline-always'  => 'Alwaysway',
 'underline-never'   => 'Evernay',
 'underline-default' => 'Owserbray efaultday',
- 
+
 'skinpreview' => '(Eviewpray)',
- 
+
 # Dates
 'sunday'        => 'Undaysay',
 'monday'        => 'Ondaymay',
@@ -485,8 +489,8 @@ $messages = array(
 'oct'           => 'Octway',
 'nov'           => 'Ovnay',
 'dec'           => 'Ecday',
- 
- 
+
+
 # Bits of text used by many pages
 'categories'            => 'Ategoriescay',
 'pagecategories'        => '{{PLURAL:$1|Ategorycay|Ategoriescay}}',
@@ -495,14 +499,15 @@ $messages = array(
 'category-media-header' => 'Ediamay inway ategorycay "$1"',
 'category-empty' => "''Isthay ategorycay urrentlycay ontainscay onay articlesway orway ediamay.''",
 'mainpagetext'      => "<big>'''EdiaWikimay ashay eenbay uccessfullysay installedway.'''</big>",
-'mainpagedocfooter' => "Onsultcay ethay [http://meta.wikimedia.org/wiki/Help:Contents User'sway Uidegay] orfay informationway onway usingway ethay ikiway oftwaresay.
- 
+'mainpagedocfooter' => "Onsultcay ethay [http://meta.wikimedia.org/wiki/Help:Contents User'sway Uidegay] orfay informationway onway usingway ethay ikiway 
+oftwaresay.
+
 == Ettinggay artedstay ==
- 
+
 * [http://www.mediawiki.org/wiki/Manual:Configuration_settings Onfigurationcay ettingssay istlay]
 * [http://www.mediawiki.org/wiki/Manual:FAQ EdiaWikimay AQFAY]
 * [http://lists.wikimedia.org/mailman/listinfo/mediawiki-announce ediawikimay-announceway EdiaWikimay eleaseray ailingmay istlay]",
- 
+
 'about'          => 'Aboutway',
 'article'        => 'Ontentcay agepay',
 'newwindow'      => '(opensway inway ewnay indowway)',
@@ -519,11 +524,11 @@ $messages = array(
 'mytalk'         => 'Ymay alktay',
 'anontalk'       => 'Alktay orfay isthay IP',
 'navigation'     => 'Avigationnay',
- 
+
 # Metadata in edit box
 
 'metadata_help' => 'Etadatamay:',
- 
+
 'errorpagetitle'    => 'Errorway',
 'returnto'          => 'Eturnray otay $1.',
 'tagline'           => 'Omfray {{SITENAME}}',
@@ -576,9 +581,9 @@ $messages = array(
 'jumpto'            => 'Umpjay otay:',
 'jumptonavigation'  => 'avigationnay',
 'jumptosearch'      => 'earchsay',
- 
-# All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation 
-template definition (see disambiguations).
+
+# All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see 
+disambiguations).
 'aboutsite'         => 'Aboutway {{SITENAME}}',
 'aboutpage'         => 'Project:Aboutway',
 'bugreports'        => 'Ugbay eportsray',
@@ -603,16 +608,16 @@ template definition (see disambiguations).
 'privacypage'       => 'Project:Ivacypray olicypay',
 'sitesupport'       => 'Onationsday',
 'sitesupport-url'   => 'Project:Itesay upportsay',
- 
+
 'badaccess'        => 'Ermissionpay errorway',
 'badaccess-group0' => 'Ouyay areway otnay allowedway otay executeway ethay actionway ouyay avehay equestedray.',
 'badaccess-group1' => 'Ethay actionway ouyay avehay equestedray isway imitedlay otay usersway inway ethay oupgray $1.',
 'badaccess-group2' => 'Ethay actionway ouyay avehay equestedray isway imitedlay otay usersway inway oneway ofway ethay oupsgray $1.',
 'badaccess-groups' => 'Ethay actionway ouyay avehay equestedray isway imitedlay otay usersway inway oneway ofway ethay oupsgray $1.',
- 
+
 'versionrequired'     => 'Ersionvay $1 ofway MediaWiki equiredray',
 'versionrequiredtext' => 'Ersionvay $1 ofway MediaWiki isway equiredray otay useway isthay agepay. Eesay [[Ecialspay:Ersionvay|ersionvay agepay]].',
- 
+
 'ok'                      => 'OKway',
 'pagetitle'               => '$1 - {{SITENAME}}',
 'retrievedfrom'           => 'Etrievedray omfray "$1"',
@@ -646,19 +651,20 @@ template definition (see disambiguations).
 'nstab-template'  => 'Emplatetay',
 'nstab-help'      => 'Elphay agepay',
 'nstab-category'  => 'Ategorycay',
- 
+
 # Main script and global functions
 'nosuchaction'      => 'Onay uchsay actionway',
 'nosuchactiontext'  => 'Ethay actionway ecifiedspay ybay ethay URLway isway otnay ecognizedray ybay ethay ikiway',
 'nosuchspecialpage' => 'Onay uchsay ecialspay agepay',
 'nospecialpagetext' => "'''<big>Ouyay avehay equestedray anway invalidway ecialspay agepay.</big>'''
- 
+
 Away istlay ofway alidvay ecialspay agespay ancay ebay oundfay atway [[Ecialspay:Ecialspayagespay]].",
- 
+
 # General errors
 'error'                => 'Errorway',
 'databaseerror'        => 'Atabaseday errorway',
-'dberrortext'          => 'Away atabaseday eryquay yntaxsay errorway ashay occurredway. Isthay aymay indicateway away ugbay inway ethay oftwaresay. Ethay astlay attemptedway atabaseday eryquay asway:
+'dberrortext'          => 'Away atabaseday eryquay yntaxsay errorway ashay occurredway. Isthay aymay indicateway away ugbay inway ethay oftwaresay. Ethay 
+astlay attemptedway atabaseday eryquay asway:
 <blockquote><tt>$1</tt></blockquote>
 omfray ithinway unctionfay "<tt>$2</tt>".
 MySQL eturnedray errorway "<tt>$3: $4</tt>".',
@@ -666,7 +672,8 @@ MySQL eturnedray errorway "<tt>$3: $4</tt>".',
 "$1"
 omfray ithinway unctionfay "$2".
 MySQL eturnedray errorway "$3: $4"',
-'noconnect'            => 'Orrysay! Ethay ikiway isway experiencingway omesay echnicaltay ifficultiesday, andway annotcay ontactcay ethay atabaseday erversay. <br />
+'noconnect'            => 'Orrysay! Ethay ikiway isway experiencingway omesay echnicaltay ifficultiesday, andway annotcay ontactcay ethay atabaseday 
+erversay. <br />
 $1',
 'nodb'                 => 'Ouldcay otnay electsay atabaseday $1',
 'cachederror'          => 'Ethay ollowingfay isway away achedcay opycay ofway ethay equestedray agepay, andway aymay otnay ebay upway otay ateday.',
@@ -675,15 +682,16 @@ $1',
 'enterlockreason'      => 'Enterway away easonray orfay ethay ocklay, includingway anway estimateway ofway enwhay ethay ocklay illway ebay eleasedray',
 'readonlytext'         => 'Ethay atabaseday isway urrentlycay ockedlay otay ewnay entriesway andway otherway odificationsmay, 
 obablypray orfay outineray atabaseday aintenancemay, afterway ichwhay itway illway ebay ackbay otay ormalnay.
- 
+
 Ethay administratorway owhay ockedlay itway offeredway isthay explanationway: $1',
 'missingarticle'       => 'Ethay atabaseday idday otnay indfay ethay exttay ofway away agepay atthay itway ouldshay avehay oundfay, amednay "$1".
- 
+
 Isthay isway usuallyway ausedcay ybay ollowingfay anway outdatedway iffday orway istoryhay inklay otay away agepay atthay ashay eenbay eletedday.
- 
+
 Ifway isthay isway otnay ethay asecay, ouyay aymay avehay oundfay away ugbay inway ethay oftwaresay.
 Easeplay eportray isthay otay anway administratorway, akingmay otenay ofway ethay URLway.',
-'readonly_lag'         => 'Ethay atabaseday ashay eenbay automaticallyway ockedlay ilewhay ethay aveslay atabaseday erverssay atchcay upway otay ethay astermay',
+'readonly_lag'         => 'Ethay atabaseday ashay eenbay automaticallyway ockedlay ilewhay ethay aveslay atabaseday erverssay atchcay upway otay ethay 
+astermay',
 'internalerror'        => 'Internalway errorway',
 'internalerror_info'   => 'Internalway errorway: $1', 
 'filecopyerror'        => 'Ouldcay otnay opycay ilefay "$1" otay "$2".',
@@ -695,12 +703,13 @@ Easeplay eportray isthay otay anway administratorway, akingmay otenay ofway etha
 'unexpected'           => 'Unexpectedway aluevay: "$1"="$2".',
 'formerror'            => 'Errorway: ouldcay otnay ubmitsay ormfay',
 'badarticleerror'      => 'Isthay actionway annotcay ebay erformedpay onway isthay agepay.',
-'cannotdelete'         => 'Ouldcay otnay eleteday ethay agepay orway ilefay ecifiedspay. (Itway aymay avehay alreadyway eenbay eletedday ybay omeonesay elseway.)',
+'cannotdelete'         => 'Ouldcay otnay eleteday ethay agepay orway ilefay ecifiedspay. (Itway aymay avehay alreadyway eenbay eletedday ybay omeonesay 
+elseway.)',
 'badtitle'             => 'Adbay itletay',
-'badtitletext'         => 'Ethay equestedray agepay itletay asway invalidway, emptyway, orway anway incorrectlyway inkedlay interway-anguagelay orway interway-ikiway itletay. Itway aymay ontaincay 
-oneway orway oremay aracterschay ichwhay annotcay ebay usedway inway itlestay.',
-'perfdisabled'         => 'Orrysay! Isthay eaturefay ashay eenbay emporarilytay isabledday ecausebay itway owsslay ethay atabaseday ownday otay ethay ointpay atthay onay oneway ancay useway ethay 
-ikiway.',
+'badtitletext'         => 'Ethay equestedray agepay itletay asway invalidway, emptyway, orway anway incorrectlyway inkedlay interway-anguagelay orway 
+interway-ikiway itletay. Itway aymay ontaincay oneway orway oremay aracterschay ichwhay annotcay ebay usedway inway itlestay.',
+'perfdisabled'         => 'Orrysay! Isthay eaturefay ashay eenbay emporarilytay isabledday ecausebay itway owsslay ethay atabaseday ownday otay ethay ointpay 
+atthay onay oneway ancay useway ethay ikiway.',
 'perfcached'           => 'Ethay ollowingfay ataday isway achedcay andway aymay otnay ebay upway otay ateday.',
 'perfcachedts'         => 'Ethay ollowingfay ataday isway achedcay, andway asway astlay updatedway $1.',
 'querypage-no-updates' => 'Updatesway orfay isthay agepay areway urrentlycay isabledday. Ataday erehay illway otnay sentlypray ebay efreshedray.',
@@ -712,14 +721,15 @@ Eryquay: $2',
 'protectedpagetext'    => 'Isthay agepay ashay eenbay ockedlay otay eventpray editingway.',
 'viewsourcetext'       => 'Ouyay ancay iewvay andway opycay ethay ourcesay ofway isthay agepay:',
 'protectedinterface'   => 'Isthay agepay ovidespray interfaceway exttay orfay ethay oftwaresay, andway isway ockedlay otay eventpray abuseway.',
-'editinginterface'     => "'''Arningway:'''  Ouyay areway editingway away agepay ichwhay isway usedway otay ovidepray interfaceway exttay orfay ethay oftwaresay. Angeschay otay isthay agepay illway 
-affectway ethay appearanceway ofway ethay userway interfaceway orfay otherway usersway.",
+'editinginterface'     => "'''Arningway:'''  Ouyay areway editingway away agepay ichwhay isway usedway otay ovidepray interfaceway exttay orfay ethay 
+oftwaresay. Angeschay otay isthay agepay illway affectway ethay appearanceway ofway ethay userway interfaceway orfay otherway usersway.",
 'sqlhidden'            => '(SQL eryquay iddenhay)',
-'cascadeprotected'     => "Isthay agepay ashay eenbay otectedpray omfray editingway, ecausebay itway isway includedway inway ethay ollowingfay {{PLURAL:$1|agepay|agespay}}, ichwhay areway otectedpray 
-ithway ethay \"ascadingcay\" optionway urnedtay onway:
+'cascadeprotected'     => "Isthay agepay ashay eenbay otectedpray omfray editingway, ecausebay itway isway includedway inway ethay ollowingfay 
+{{PLURAL:$1|agepay|agespay}}, ichwhay areway otectedpray ithway ethay \"ascadingcay\" optionway urnedtay onway:
 $2",
 'namespaceprotected'   => "Ouyay oday otnay avehay ermissionpay otay editway agespay inway ethay '''$1''' amespacenay.",
-'customcssjsprotected' => "Ouyay oday otnay avehay ermissionpay otay editway isthay agepay, ecausebay itway ontainscay anotherway user'sway ersonalpay ettingssay.",
+'customcssjsprotected' => "Ouyay oday otnay avehay ermissionpay otay editway isthay agepay, ecausebay itway ontainscay anotherway user'sway ersonalpay 
+ettingssay.",
 'ns-specialprotected'  => "Agespay inway ethay {{ns:special}} amespacenay annotcay ebay editedway.",
 
 
@@ -727,10 +737,11 @@ $2",
 # Login and logout pages
 'logouttitle'                => 'Userway ogoutlay',
 'logouttext'                 => '<strong>Ouyay areway ownay oggedlay outway.</strong><br />
-Ouyay ancay ontinuecay otay useway {{SITENAME}} anonymouslyway, orway ouyay ancay oglay inway againway asway ethay amesay orway asway away ifferentday userway. Otenay atthay omesay agespay aymay 
-ontinuecay otay ebay isplayedday asway ifway ouyay ereway illstay oggedlay inway, untilway ouyay earclay ouryay owserbray achecay.',
+Ouyay ancay ontinuecay otay useway {{SITENAME}} anonymouslyway, orway ouyay ancay oglay inway againway asway ethay amesay orway asway away ifferentday 
+userway. Otenay atthay omesay agespay aymay ontinuecay otay ebay isplayedday asway ifway ouyay ereway illstay oggedlay inway, untilway ouyay earclay ouryay 
+owserbray achecay.',
 'welcomecreation'            => "== Elcomeway, $1! ==
- 
+
 Ouryay accountway ashay eenbay eatedcray. On'tday orgetfay otay angechay ouryay {{SITENAME}} eferencespray",
 'loginpagetitle'             => 'Userway oginlay',
 'yourname'                   => 'Usernameway:',
@@ -738,7 +749,8 @@ Ouryay accountway ashay eenbay eatedcray. On'tday orgetfay otay angechay ouryay 
 'yourpasswordagain'          => 'Etyperay asswordpay:',
 'remembermypassword'         => 'Ememberray ymay oginlay onway isthay omputercay',
 'yourdomainname'             => 'Ouryay omainday:',
-'externaldberror'            => 'Erethay asway eitherway anway externalway authenticationway atabaseday errorway orway ouyay areway otnay allowedway otay updateway ouryay externalway accountway.',
+'externaldberror'            => 'Erethay asway eitherway anway externalway authenticationway atabaseday errorway orway ouyay areway otnay allowedway otay 
+updateway ouryay externalway accountway.',
 'loginproblem'               => '<b>Erethay ashay eenbay away oblempray ithway ouryay oginlay.</b><br />Ytray againway!',
 'login'                      => 'Oglay inway',
 'loginprompt'                => 'Ouyay ustmay avehay ookiescay enabledway otay oglay inway otay {{SITENAME}}.',
@@ -764,13 +776,16 @@ Ouryay accountway ashay eenbay eatedcray. On'tday orgetfay otay angechay ouryay 
 'badsig'                     => 'Invalidway awray ignaturesay; eckchay HTML agstay.',
 'badsiglength'               => 'Icknamenay ootay onglay; ustmay ebay underway $1 aracterschay.',
 'email'                      => 'E-mailway',
-'prefs-help-realname'        => 'Ealray amenay isway optionalway andway ifway ouyay oosechay otay ovidepray itway isthay illway ebay usedway orfay ivinggay ouyay attributionway orfay ouryay orkway.',
+'prefs-help-realname'        => 'Ealray amenay isway optionalway andway ifway ouyay oosechay otay ovidepray itway isthay illway ebay usedway orfay ivinggay 
+ouyay attributionway orfay ouryay orkway.',
 'loginerror'                 => 'Oginlay errorway',
 'prefs-help-email'           => 'E-mailway addressway 
-isway optionalway, utbay itway enablesway othersway otay ontactcay ouyay oughthray ouryay userway orway userway_alktay agepay ithoutway eedingnay otay evealray ouryay identityway.',
-'nocookiesnew'               => 'Ethay userway accountway asway eatedcray, utbay ouyay areway otnay oggedlay inway. {{SITENAME}} usesway ookiescay otay oglay inway usersway. Ouyay avehay ookiescay 
-isabledday. Easeplay enableway emthay, enthay oglay inway ithway ouryay ewnay usernameway andway asswordpay.',
-'nocookieslogin'             => '{{SITENAME}} usesway ookiescay otay oglay inway usersway. Ouyay avehay ookiescay isabledday. Easeplay enableway emthay andway ytray againway.',
+isway optionalway, utbay itway enablesway othersway otay ontactcay ouyay oughthray ouryay userway orway userway_alktay agepay ithoutway eedingnay otay 
+evealray ouryay identityway.',
+'nocookiesnew'               => 'Ethay userway accountway asway eatedcray, utbay ouyay areway otnay oggedlay inway. {{SITENAME}} usesway ookiescay otay oglay 
+inway usersway. Ouyay avehay ookiescay isabledday. Easeplay enableway emthay, enthay oglay inway ithway ouryay ewnay usernameway andway asswordpay.',
+'nocookieslogin'             => '{{SITENAME}} usesway ookiescay otay oglay inway usersway. Ouyay avehay ookiescay isabledday. Easeplay enableway emthay 
+andway ytray againway.',
 'noname'                     => 'Ouyay avehay otnay ecifiedspay away alidvay userway amenay.',
 'loginsuccesstitle'          => 'Oginlay uccessfulsay',
 'loginsuccess'               => "'''Ouyay areway ownay oggedlay inway otay {{SITENAME}} asway \"\$1\".'''",
@@ -779,45 +794,51 @@ isabledday. Easeplay enableway emthay, enthay oglay inway ithway ouryay ewnay us
 'nouserspecified'            => 'Ouyay avehay otay ecifyspay away usernameway.',
 'wrongpassword'              => 'Incorrectway asswordpay enteredway. Easeplay ytray againway.',
 'wrongpasswordempty'         => 'Asswordpay enteredway asway ankblay. Easeplay ytray againway.',
-'passwordtooshort'           => 'Ouryay asswordpay isway invalidway orway ootay ortshay. Itway ustmay avehay atway eastlay $1 aracterschay andway ebay ifferentday omfray ouryay usernameway.',
+'passwordtooshort'           => 'Ouryay asswordpay isway invalidway orway ootay ortshay. Itway ustmay avehay atway eastlay $1 aracterschay andway ebay 
+ifferentday omfray ouryay usernameway.',
 'mailmypassword'             => 'E-mailway asswordpay',
 'passwordremindertitle'      => 'Asswordpay eminderray omfray {{SITENAME}}',
-'passwordremindertext'       => 'Omeonesay (obablypray ouyay, omfray IP addressway $1) equestedray atthay eway endsay ouyay away ewnay asswordpay orfay {{SITENAME}} ($4). 
+'passwordremindertext'       => 'Omeonesay (obablypray ouyay, omfray IP addressway $1) equestedray atthay eway endsay ouyay away ewnay asswordpay orfay 
+{{SITENAME}} ($4). 
 Ethay asswordpay orfay userway "$2" isway ownay "$3".
 Ouyay ouldshay oglay inway andway angechay ouryay asswordpay ownay.
- 
-Ifway omeonesay elseway ademay isthay equestray orway ifway ouyay avehay ememberedray ouryay asswordpay andway ouyay onay ongerlay ishway otay angechay itway, ouyay aymay ignoreway isthay essagemay 
-andway ontinuecay usingway ouryay oldway asswordpay.',
+
+Ifway omeonesay elseway ademay isthay equestray orway ifway ouyay avehay ememberedray ouryay asswordpay andway ouyay onay ongerlay ishway otay angechay 
+itway, ouyay aymay ignoreway isthay essagemay andway ontinuecay usingway ouryay oldway asswordpay.',
 'noemail'                    => 'Erethay isway onay E-mailway addressway ecordedray orfay userway "$1".',
 'passwordsent'               => 'Away ewnay asswordpay ashay eenbay entsay otay ethay E-mailway addressway egisteredray orfay "$1".
 Easeplay oglay inway againway afterway ouyay eceiveray itway.',
-'blocked-mailpassword'       => 'Ouryay IP addressway isway ockedblay omfray editingway, andway osay isway otnay allowedway otay useway ethay asswordpay ecoveryray unctionfay otay eventpray 
-abuseway.',
-'eauthentsent'               => 'Away onfirmationcay E-mailway ashay eenbay entsay otay ethay ominatednay E-mailway addressway. Eforebay anyway otherway ailmay isway entsay otay ethay accountway, 
-ouyay illway avehay otay ollowfay ethay instructionsway inway ethay E-mailway, otay onfirmcay atthay ethay accountway isway actuallyway oursyay.',
-'throttled-mailpassword'     => 'Away asswordpay eminderray ashay alreadyway eenbay entsay, ithinway ethay astlay $1 ourshay. Otay eventpray abuseway, onlyway oneway asswordpay eminderray illway ebay 
-entsay erpay $1 ourshay.',
+'blocked-mailpassword'       => 'Ouryay IP addressway isway ockedblay omfray editingway, andway osay isway otnay allowedway otay useway ethay asswordpay 
+ecoveryray unctionfay otay eventpray abuseway.',
+'eauthentsent'               => 'Away onfirmationcay E-mailway ashay eenbay entsay otay ethay ominatednay E-mailway addressway. Eforebay anyway otherway 
+ailmay isway entsay otay ethay accountway, ouyay illway avehay otay ollowfay ethay instructionsway inway ethay E-mailway, otay onfirmcay atthay ethay 
+accountway isway actuallyway oursyay.',
+'throttled-mailpassword'     => 'Away asswordpay eminderray ashay alreadyway eenbay entsay, ithinway ethay astlay $1 ourshay. Otay eventpray abuseway, 
+onlyway oneway asswordpay eminderray illway ebay entsay erpay $1 ourshay.',
 'mailerror'                  => 'Errorway endingsay ailmay: $1',
 'acct_creation_throttle_hit' => "Orrysay, ouyay avehay alreadyway eatedcray $1 accountsway. Ouyay an'tcay akemay anyway oremay.",
 'emailauthenticated'         => 'Ouryay E-mailway addressway asway authenticatedway onway $1.',
-'emailnotauthenticated'      => 'Ouryay E-mailway addressway isway otnay etyay authenticatedway. Onay E-mailway illway ebay entsay orfay anyway ofway ethay ollowingfay eaturesfay.',
+'emailnotauthenticated'      => 'Ouryay E-mailway addressway isway otnay etyay authenticatedway. Onay E-mailway illway ebay entsay orfay anyway ofway ethay 
+ollowingfay eaturesfay.',
 'noemailprefs'               => 'Ecifyspay anway E-mailway addressway orfay esethay eaturesfay otay orkway.',
 'emailconfirmlink'           => 'Onfirmcay ouryay E-mailway addressway',
-'invalidemailaddress'        => 'Ethay E-mailway addressway annotcay ebay acceptedway asway itway appearsway otay avehay anway invalidway ormatfay. Easeplay enterway away ellway-ormattedfay 
-addressway orway emptyway atthay ieldfay.',
+'invalidemailaddress'        => 'Ethay E-mailway addressway annotcay ebay acceptedway asway itway appearsway otay avehay anway invalidway ormatfay. Easeplay 
+enterway away ellway-ormattedfay addressway orway emptyway atthay ieldfay.',
 'accountcreated'             => 'Accountway eatedcray',
 'accountcreatedtext'         => 'Ethay userway accountway orfay $1 ashay eenbay eatedcray.',
 'loginlanguagelabel'         => 'Anguagelay: $1',
 
- 
+
 # Password reset dialog
 'resetpass'               => 'Esetray accountway asswordpay',
-'resetpass_announce'      => 'Ouyay oggedlay inway ithway away emporarytay eway-ailedmay odecay. Otay inishfay ogginglay inway, ouyay ustmay etsay away ewnay asswordpay erehay:',
+'resetpass_announce'      => 'Ouyay oggedlay inway ithway away emporarytay eway-ailedmay odecay. Otay inishfay ogginglay inway, ouyay ustmay etsay away ewnay 
+asswordpay erehay:',
 'resetpass_text'          => '<!-- Add text here -->', # only translate this message to other languages if you have to change it
 'resetpass_header'        => 'Esetray asswordpay',
 'resetpass_submit'        => 'Etsay asswordpay andway oglay inway',
 'resetpass_success'       => 'Ouryay asswordpay ashay eenbay angedchay uccessfullysay! Ownay ogginglay ouyay inway...',
-'resetpass_bad_temporary' => 'Invalidway emporarytay asswordpay. Ouyay aymay avehay alreadyway uccessfullysay angedchay ouryay asswordpay orway equestedray away ewnay emporarytay asswordpay.',
+'resetpass_bad_temporary' => 'Invalidway emporarytay asswordpay. Ouyay aymay avehay alreadyway uccessfullysay angedchay ouryay asswordpay orway equestedray 
+away ewnay emporarytay asswordpay.',
 'resetpass_forbidden'     => 'Asswordspay annotcay ebay angedchay onway isthay ikiway',
 'resetpass_missing'       => 'Onay ormfay ataday.',
 
@@ -934,20 +955,22 @@ otnay useway itway. Eway ereforethay avehay otay useway ethay umericalnay
 IP addressway otay identifyway imhay/erhay. Uchsay anway IP 
 addressway ancay ebay aredshay ybay everalsay usersway. Ifway ouyay areway
 anway anonymousway userway andway eelfay atthay irrelevantway ommentscay 
-avehay eenbay irectedday atway ouyay, easeplay [[Special:Userlogin|eatecray anway accountway orway oglay inway]] otay avoidway uturefay onfusioncay ithway otherway anonymousway usersway.''",
-'noarticletext'             => 'Erethay isway urrentlycay onay exttay inway isthay agepay, ouyay ancay [[Special:Search/{{PAGENAME}}|earchsay orfay isthay agepay itletay]] inway otherway agespay 
-orway [{{fullurl:{{FULLPAGENAME}}|action=edit}} editway isthay agepay].',
+avehay eenbay irectedday atway ouyay, easeplay [[Special:Userlogin|eatecray anway accountway orway oglay inway]] otay avoidway uturefay onfusioncay ithway 
+otherway anonymousway usersway.''",
+'noarticletext'             => 'Erethay isway urrentlycay onay exttay inway isthay agepay, ouyay ancay [[Special:Search/{{PAGENAME}}|earchsay orfay isthay 
+agepay itletay]] inway otherway agespay orway [{{fullurl:{{FULLPAGENAME}}|action=edit}} editway isthay agepay].',
 'clearyourcache'            => "'''Otenay:''' Afterway avingsay, ouyay aymay avehay otay ypassbay ouryay owser'sbray 
-achecay otay eesay ethay angeschay. '''Mozilla / Firefox / Safari:''' oldhay ownday ''Shift'' ilewhay ickingclay ''Reload'', orway esspray ''Ctrl-Shift-R'' (''Cmd-Shift-R'' onway Apple Mac); 
-'''IE:''' oldhay ''Ctrl'' ilewhay ickingc;ay ''Refresh'', orway esspray ''Ctrl-F5''; '''Konqueror:''': implysay ickclay ethay ''Reload'' uttonbay, orway esspray ''F5''; '''Opera''' usersway aymay 
-eednay otay ompletelycay earclay eirthay cache inway ''Tools→Preferences''.",
+achecay otay eesay ethay angeschay. '''Mozilla / Firefox / Safari:''' oldhay ownday ''Shift'' ilewhay ickingclay ''Reload'', orway esspray ''Ctrl-Shift-R'' 
+(''Cmd-Shift-R'' onway Apple Mac); '''IE:''' oldhay ''Ctrl'' ilewhay ickingc;ay ''Refresh'', orway esspray ''Ctrl-F5''; '''Konqueror:''': implysay ickclay 
+ethay ''Reload'' uttonbay, orway esspray ''F5''; '''Opera''' usersway aymay eednay otay ompletelycay earclay eirthay cache inway ''Tools→Preferences''.",
 'usercssjsyoucanpreview'    => "<strong>Iptay:</strong> Useway ethay 'Owshay eview'pray uttonbay otay esttay ouryay ewnay CSS/
 JS eforebay avingsay.",
 'usercsspreview'            => "'''Ememberray atthay ouyay areway onlyway eviewingpray ouryay userway CSS, 
 itway ashay otnay etyay eenbay avedsay!'''",
-'userjspreview'             => "'''Ememberray atthay ouyay areway onlyway estingtay/eviewingpray ouryay userway JavaScript, itway ashay otnay etyay eenbay avedsay!'''",
-'userinvalidcssjstitle'     => "'''Arningway:''' Erethay isway onay inskay \"\$1\". Ememberray atthay ustomcay .css andway .js agespay useway away owercaselay itletay, e.g. 
-{{ns:user}}:Foo/monobook.css asway opposedway otay {{ns:user}}:Foo/Monobook.css.",
+'userjspreview'             => "'''Ememberray atthay ouyay areway onlyway estingtay/eviewingpray ouryay userway JavaScript, itway ashay otnay etyay eenbay 
+avedsay!'''",
+'userinvalidcssjstitle'     => "'''Arningway:''' Erethay isway onay inskay \"\$1\". Ememberray atthay ustomcay .css andway .js agespay useway away 
+owercaselay itletay, e.g. {{ns:user}}:Foo/monobook.css asway opposedway otay {{ns:user}}:Foo/Monobook.css.",
 'updated'                   => '(Updatedway)',
 'note'                      => '<strong>Otenay:</strong>',
 'previewnote'               => '<strong>Isthay isway onlyway away eviewpray; angeschay avehay otnay etyay eenbay 
@@ -999,7 +1022,8 @@ evisionray ofway isthay agepay.
 Ifway ouyay avesay itway, anyway angeschay ademay incesay isthay 
 evisionray illway ebay ostlay.</strong>',
 'yourdiff'                  => 'Ifferencesday',
-'copyrightwarning'          => "Easeplay otenay atthay allway ontributionscay otay {{SITENAME}} areway onsideredcay otay ebay eleasedray underway ethay $2 (eesay $1 orfay
+'copyrightwarning'          => "Easeplay otenay atthay allway ontributionscay otay {{SITENAME}} areway onsideredcay otay ebay eleasedray underway ethay $2 
+(eesay $1 orfay
  etailsday). Ifway ouyay on'tday antway ouryay itingwray otay ebay 
 editedway ercilesslymay andway edistributedray atway illway, enthay 
 on'tday ubmitsay itway erehay.<br />
@@ -1007,7 +1031,8 @@ Ouyay areway alsoway omisingpray usway atthay ouyay otewray isthay
 ourselfyay, orway opiedcay itway omfray away ublicpay omainday orway 
 imilarsay eefray esourceray.
 <strong>DO NOT SUBMIT COPYRIGHTED WORK WITHOUT PERMISSION!</strong>",
-'copyrightwarning2'         => "Easeplay otenay atthay allway ontributionscay otay {{SITENAME}} aymay ebay editedway, alteredway, orway emovedray ybay otherway 
+'copyrightwarning2'         => "Easeplay otenay atthay allway ontributionscay otay {{SITENAME}} aymay ebay editedway, alteredway, orway emovedray ybay 
+otherway 
 ontributorscay. Ifway ouyay on'tday antway ouryay itingwray otay ebay 
 editedway ercilesslymay, enthay on'tday ubmitsay itway erehay.<br />
 Ouyay areway alsoway omisingpray usway atthay ouyay otewray isthay 
@@ -1201,8 +1226,8 @@ ontainingcay allway ofway ethay earchsay ermstay illway appearway inway
 ethay esultray).",
 'powersearch'           => 'Earchsay',
 'powersearchtext'       => 'Earchsay inway amespacesnay:<br />$1<br />$2 Istlay edirectsray<br />Earchsay orfay $3 $9',
-'searchdisabled'        => '{{SITENAME}} earchsay isway isabledday. Ouyay ancay earchsay iavay Google inway ethay eantimemay. Otenay atthay eirthay indexesway ofway {{SITENAME}} ontentcay aymay ebay 
-outway ofway ateday.',
+'searchdisabled'        => '{{SITENAME}} earchsay isway isabledday. Ouyay ancay earchsay iavay Google inway ethay eantimemay. Otenay atthay eirthay 
+indexesway ofway {{SITENAME}} ontentcay aymay ebay outway ofway ateday.',
 
 
 
@@ -1311,7 +1336,8 @@ Unselectedway oupsgray illway otnay ebay angedchay. Ouyay ancay eselectday away 
 isthay agepay.',
 'recentchanges-feed-description'    => 'Acktray ethay ostmay ecentray angeschay otay ethay ikiway inway 
 isthay eedfay.',
-'rcnote'                            => "Elowbay {{PLURAL:$1|isway '''1''' angechay|areway ethay astlay '''$1''' angeschay}} inway ethay astlay {{PLURAL:$2|ayday|'''$2''' aysday}}, asway ofway $3.",
+'rcnote'                            => "Elowbay {{PLURAL:$1|isway '''1''' angechay|areway ethay astlay '''$1''' angeschay}} inway ethay astlay 
+{{PLURAL:$2|ayday|'''$2''' aysday}}, asway ofway $3.",
 'rcnotefrom'                        => 'Elowbay areway ethay angeschay incesay <b>$2</b> (upway otay <b>$1</b> ownshay).',
 'rclistfrom'                        => 'Owshay ewnay angeschay artingstay omfray $1',
 'rcshowhideminor'                   => '$1 inormay editsway',
@@ -1337,7 +1363,8 @@ isthay eedfay.',
 # Recent changes linked
 'recentchangeslinked'          => 'Elatedray angeschay',
 'recentchangeslinked-noresult' => 'Onay angeschay onway inkedlay agespay uringday ethay ivengay eriodpay.',
-'recentchangeslinked-summary'  => "Isthay ecialspay agepay istslay ethay astlay angeschay onway agespay owhay areway inkedlay. Agespay onway ouryay atchlistway areway '''oldbay'''.",
+'recentchangeslinked-summary'  => "Isthay ecialspay agepay istslay ethay astlay angeschay onway agespay owhay areway inkedlay. Agespay onway ouryay 
+atchlistway areway '''oldbay'''.",
 
 # Upload
 'upload'                      => 'Uploadway ilefay',
@@ -1350,8 +1377,8 @@ otay uploadway ilesfay.',
 'upload_directory_read_only'  => 'Ethay uploadway irectoryday ($1) isway otnay itablewray ybay ethay ebserverway.',
 'uploaderror'                 => 'Uploadway errorway',
 'uploadtext'                  => "Useway ethay ormfay elowbay otay uploadway ilesfay, otay iewvay orway 
-earchsay eviouslypray uploadedway imagesway ogay otay ethay [[Special:Imagelist|istlay ofway uploadedway ilesfay]], uploadsway andway eletionsday areway alsoway oggedlay inway ethay 
-[[Special:Log/upload|uploadway oglay]].
+earchsay eviouslypray uploadedway imagesway ogay otay ethay [[Special:Imagelist|istlay ofway uploadedway ilesfay]], uploadsway andway eletionsday areway 
+alsoway oggedlay inway ethay [[Special:Log/upload|uploadway oglay]].
 
 Otay includeway ethay imageway inway away agepay, useway away inklay inway ethay ormfay
 '''<nowiki>[[</nowiki>{{ns:image}}<nowiki>:Ilefay.jpg]]</nowiki>''',
@@ -1384,18 +1411,20 @@ isthay ilefay isway $2.',
 'emptyfile'                   => 'Ethay ilefay ouyay uploadedway eemssay otay ebay emptyway. Isthay ightmay 
 ebay ueday otay away ypotay inway ethay ilefay amenay. Easeplay eckchay 
 etherwhay ouyay eallyray antway otay uploadway isthay ilefay.',
-'fileexists'                  => 'Away ilefay ithway isthay amenay existsway alreadyway, easeplay eckchay <strong><tt>$1</tt></strong> ifway ouyay areway otnay uresay ifway ouyay antway otay angechay 
-itway.',
+'fileexists'                  => 'Away ilefay ithway isthay amenay existsway alreadyway, easeplay eckchay <strong><tt>$1</tt></strong> ifway ouyay areway 
+otnay uresay ifway ouyay antway otay angechay itway.',
 'fileexists-extension'        => 'Away ilefay ithway away imilarsay amenay existsway:<br />
 Amenay ofway ethay uploadingway ilefay: <strong><tt>$1</tt></strong><br />
 Amenay ofway ethay existingway ilefay: <strong><tt>$2</tt></strong><br />
 Easeplay oosechay away ifferentday amenay.',
 'fileexists-thumb'            => "'''<center>Existingway imageway</center>'''",
-'fileexists-thumbnail-yes'    => 'Ethay ilefay eemssay otay ebay anway imageway ofway educedray izesay <i>(thumbnail)</i>. Easeplay eckchay ethay ilefay <strong><tt>$1</tt></strong>.<br />
+'fileexists-thumbnail-yes'    => 'Ethay ilefay eemssay otay ebay anway imageway ofway educedray izesay <i>(thumbnail)</i>. Easeplay eckchay ethay ilefay 
+<strong><tt>$1</tt></strong>.<br />
 Ifway ethay eckedchay ilefay isway ethay amesay imageway ofway originalway
 izesay itway isway otnay ecessarynay otay uploadway anway extraway 
 umbnailthay.',
-'file-thumbnail-no'           => 'Ethay ilenamefay eginsbay ithway <strong><tt>$1</tt></strong>. Itway eemssay otay ebay anway imageway ofway educedray izesay <i>(thumbnail)</i>.
+'file-thumbnail-no'           => 'Ethay ilenamefay eginsbay ithway <strong><tt>$1</tt></strong>. Itway eemssay otay ebay anway imageway ofway educedray 
+izesay <i>(thumbnail)</i>.
 Ifway ouyay avehay isthay imageway inway ullfay esolutionray uploadway 
 isthay oneway, otherwiseway angechay ethay ilefay amenay easeplay.',
 'fileexists-forbidden'        => 'Away ilefay ithway isthay amenay existsway alreadyway; easeplay ogay 
@@ -1495,11 +1524,13 @@ appearedway atway atthay imetay.',
 # File reversion
 'filerevert'                => 'Evertray $1',
 'filerevert-legend'         => 'Evertray ilefay',
-'filerevert-intro'          => "<span class=\"plainlinks\">Ouyay areway evertingray '''[[Media:$1|$1]]''' otay ethay [$4 ersionvay asway ofway $3, $2].</span>",
+'filerevert-intro'          => "<span class=\"plainlinks\">Ouyay areway evertingray '''[[Media:$1|$1]]''' otay ethay [$4 ersionvay asway ofway $3, 
+$2].</span>",
 'filerevert-comment'        => 'Ommentcat:',
 'filerevert-defaultcomment' => 'Evertedray otay ersionvay asway ofway $2, $1',
 'filerevert-submit'         => 'Revert',
-'filerevert-success'        => "<span class=\"plainlinks\">'''[[Media:$1|$1]]''' ashay eenbay evertedray otay ethay [$4 ersionvay asway ofway $3, $2].</span>",
+'filerevert-success'        => "<span class=\"plainlinks\">'''[[Media:$1|$1]]''' ashay eenbay evertedray otay ethay [$4 ersionvay asway ofway $3, 
+$2].</span>",
 'filerevert-badversion'     => 'Erethay isway onay eviouspray ocallay ersionvay ofway isthay ilefay ithway
  ethay ovidedpray imestamptay.',
 
@@ -1520,7 +1551,8 @@ ilefay. Easeplay evertray otay anway olderway ersionvay irstfay.',
 
 # MIME search
 'mimesearch'         => 'MIME earchsay',
-'mimesearch-summary' => 'Isthay agepay enablesway ethay ilteringfay ofway ilesfay orfay itsway MIME-ypetay. Inputway: ontenttypecay/ubtypesay, e.g. <tt>imageway/jpeg</tt>.',
+'mimesearch-summary' => 'Isthay agepay enablesway ethay ilteringfay ofway ilesfay orfay itsway MIME-ypetay. Inputway: ontenttypecay/ubtypesay, e.g. 
+<tt>imageway/jpeg</tt>.',
 'mimetype'           => 'MIME ypetau:',
 'download'           => 'ownloadday',
 
@@ -1535,7 +1567,8 @@ ilefay. Easeplay evertray otay anway olderway ersionvay irstfay.',
 # Unused templates
 'unusedtemplates'         => 'Unusedway emplatestay',
 'unusedtemplates-summary' => '', # only translate this message to other languages if you have to change it
-'unusedtemplatestext'     => 'Isthay agepay istslay allway agespay inway ethay emplatetay amespacenay ichwhay areway otnay includedway inway anotherway agepay. 
+'unusedtemplatestext'     => 'Isthay agepay istslay allway agespay inway ethay emplatetay amespacenay ichwhay areway otnay includedway inway anotherway 
+agepay. 
 Ememberray otay eckchay orfay otherway inkslay otay ethay emplatestay 
 eforebay eletingday emthay.',
 'unusedtemplateswlh'      => 'otherway inkslay',
@@ -1561,13 +1594,15 @@ ontentcay {{PLURAL:\$2|agepay|agespay}}.
 
 '''\$8''' {{PLURAL:\$8|file|files}} have been uploaded.
 
-Erethay avehay eenbay away otaltay ofway '''\$3''' {{PLURAL:\$3|agepay iewvay|agepay iewsvay}}, andway '''\$4''' {{PLURAL:\$4|agepay editway|agepay editsway}}
+Erethay avehay eenbay away otaltay ofway '''\$3''' {{PLURAL:\$3|agepay iewvay|agepay iewsvay}}, andway '''\$4''' {{PLURAL:\$4|agepay editway|agepay 
+editsway}}
 incesay {{SITENAME}} asway etupsay.
 Atthay omescay otay '''\$5''' averageway editsway erpay agepay, andway
  '''\$6''' iewsvay erpay editway.
 
 Ethay [http://meta.wikimedia.org/wiki/Help:Job_queue job queue] engthlay isway '''\$7'''.",
-'userstatstext'          => "Erethay {{PLURAL:$1|isway '''1''' egisteredray [[Special:Listusers|userway]]|areway '''$1''' egisteredray [[Special:Listusers|usersway]]}}, ofway ichwhay
+'userstatstext'          => "Erethay {{PLURAL:$1|isway '''1''' egisteredray [[Special:Listusers|userway]]|areway '''$1''' egisteredray 
+[[Special:Listusers|usersway]]}}, ofway ichwhay
 '''$2''' (orway '''$4%''') {{PLURAL:$2|ashay|avehay}} $5 ightsray.",
 'statistics-mostpopular' => 'Ostmay iewedvay agespay',
 
@@ -1580,8 +1615,8 @@ usesway away emplatetay ichwhay isway inkedlay omfray [[MediaWiki:disambiguation
 
 'doubleredirects'         => 'Oubleday edirectsray',
 'doubleredirects-summary' => '', # only translate this message to other languages if you have to change it
-'doubleredirectstext'     => 'Eachway owray ontainscay inkslay otay ethay irstfay andway econdsay edirectray, asway ellway asway ethay argettay ofway ethay econdsay edirectray, ichwhay isway 
-usuallyway "ealray" argetray agepay, ichwhay ethay irstfay edirectray ouldshay ointpay otay.',
+'doubleredirectstext'     => 'Eachway owray ontainscay inkslay otay ethay irstfay andway econdsay edirectray, asway ellway asway ethay argettay ofway ethay 
+econdsay edirectray, ichwhay isway usuallyway "ealray" argetray agepay, ichwhay ethay irstfay edirectray ouldshay ointpay otay.',
 
 'brokenredirects'         => 'Okenbray edirectsray',
 'brokenredirects-summary' => '', # only translate this message to other languages if you have to change it
@@ -1723,8 +1758,8 @@ agepay.',
 'allpagesnext'      => 'Extnay',
 'allpagessubmit'    => 'Ogay',
 'allpagesprefix'    => 'Isplayday agespay ithway efixpray:',
-'allpagesbadtitle'  => 'Ethay ivengay agepay itletay asway invalidway orway adhay anway interway-anguagelay orway interway-ikiway efixpray. Itway aymay ontaincay oneway orway oremay aracterschay 
-ichwhay annotcay ebay usedway inway itlestay.',
+'allpagesbadtitle'  => 'Ethay ivengay agepay itletay asway invalidway orway adhay anway interway-anguagelay orway interway-ikiway efixpray. Itway aymay 
+ontaincay oneway orway oremay aracterschay ichwhay annotcay ebay usedway inway itlestay.',
 'allpages-bad-ns'   => '{{SITENAME}} oesday otnay avehay amespacenay "$1".',
 
 # Special:Listusers
@@ -1801,7 +1836,8 @@ isitedvay emthay areway ownshay inway '''oldbay'''",
 'watchmethod-list'     => 'eckingchay atchedway agespay orfay ecentray editsway',
 'watchlistcontains'    => 'Ouryay atchlistway ontainscay $1 {{PLURAL:$1|agepay|agespay}}.',
 'iteminvalidname'      => "Oblempray ithway itemway '$1', invalidway amenay...",
-'wlnote'               => "Elowbay {{PLURAL:$1|isway ethay astlay angechay|areway ethay astlay '''$1''' angeschay}} inway ethay astlay {{PLURAL:$2|ourhay|'''$2''' ourshay}}.",
+'wlnote'               => "Elowbay {{PLURAL:$1|isway ethay astlay angechay|areway ethay astlay '''$1''' angeschay}} inway ethay astlay 
+{{PLURAL:$2|ourhay|'''$2''' ourshay}}.",
 'wlshowlast'           => 'Owshay astlay $1 ourshay $2 aysday $3',
 'wlsaved'              => 'Isthay isway away avedsay ersionvay ofway ouryay atchlistway.',
 'watchlist-show-bots'  => 'Owshay otbay editsway',
@@ -1828,7 +1864,8 @@ isitedvay emthay areway ownshay inway '''oldbay'''",
 'enotif_body'                  => 'Earday $WATCHINGUSERNAME,
 	
 
-Ethay {{SITENAME}} agepay $PAGETITLE ashay eenbay $CHANGEDORCREATED onway $PAGEEDITDATE ybay $PAGEEDITOR, eesay $PAGETITLE_URL orfay ethay urrentcay ersionvay.
+Ethay {{SITENAME}} agepay $PAGETITLE ashay eenbay $CHANGEDORCREATED onway $PAGEEDITDATE ybay $PAGEEDITOR, eesay $PAGETITLE_URL orfay ethay urrentcay 
+ersionvay.
 
 $NEWPAGE
 
@@ -1838,8 +1875,8 @@ Ontactcay ethay editorway:
 ailmay: $PAGEEDITOR_EMAIL
 ikiway: $PAGEEDITOR_WIKI
 
-Erethay illway ebay obay otherway otificationsnay inway asecay ofway urtherfay angeschay unlessway ouyay isitvay isthay agepay. Ouyay ouldcay alsoway esetray ethay otificationnay agsflay orfay allway 
-ouryay atchedway agespay onway ouryay atchlistway.
+Erethay illway ebay obay otherway otificationsnay inway asecay ofway urtherfay angeschay unlessway ouyay isitvay isthay agepay. Ouyay ouldcay alsoway esetray 
+ethay otificationnay agsflay orfay allway ouryay atchedway agespay onway ouryay atchlistway.
 
              Ouryay iendlyfray {{SITENAME}} otificationnay ystemsay
 
@@ -1890,7 +1927,8 @@ ashay editedway orway olledray ackbay ethay agepay alreadyway.
 
 Last edit was by [[User:$3|$3]] ([[User talk:$3|Talk]]).',
 'editcomment'                 => 'Ethay editway ommentcay asway: "<i>$1</i>".', # only shown if there is an edit comment
-'revertpage'                  => 'Evertedray editsway ybay [[Special:Contributions/$2|$2]] ([[User talk:$2|Alktay]]); angedchay ackbay otay astlay ersionvay ybay [[User:$1|$1]]',
+'revertpage'                  => 'Evertedray editsway ybay [[Special:Contributions/$2|$2]] ([[User talk:$2|Alktay]]); angedchay ackbay otay astlay ersionvay 
+ybay [[User:$1|$1]]',
 'rollback-success' => 'Evertedray editsway ybay $1; angedchay ackbay otay astlay 
 ersionvay ybay $2.',
 'sessionfailure'              => 'Erethay eemssay otay ebay away oblempray ithway ouryay oginlay essionsay;
@@ -1922,8 +1960,8 @@ Erehay areway ethay urrentcay ettingssay orfay ethay agepay <strong>$1</strong>:
 'protect-locked-access'       => 'Ouryay accountway oesday otnay avehay ermissionpay otay angechay
  agepay otectionpray evelslay.
 Erehay areway ethay urrentcay ettingssay orfay ethay agepay <strong>$1</strong>:',
-'protect-cascadeon'           => "Isthay agepay isway urrentlycay otectedpray ecausebay itwas iswas includedway inway ethay ollowingfay {{PLURAL:$1|agepay, ichwhay ashay|agespay, ichwhay avehay}} 
-ascadingcay otectionpray urnedtay onway. Ouyay ancay angechay isthay age'spay otectionpray evellay, utbay
+'protect-cascadeon'           => "Isthay agepay isway urrentlycay otectedpray ecausebay itwas iswas includedway inway ethay ollowingfay {{PLURAL:$1|agepay, 
+ichwhay ashay|agespay, ichwhay avehay}} ascadingcay otectionpray urnedtay onway. Ouyay ancay angechay isthay age'spay otectionpray evellay, utbay
  itway illway otnay affectway ethay ascadingcay otectionpray.",
 'protect-default'             => '(efaultday)',
 'protect-fallback' => 'Equireray "$1" ermissionpay',
@@ -2011,7 +2049,8 @@ Onsultcay ethay [[Special:Log/delete|eletionday oglay]] orfay away ecordray ofwa
 'undelete-filename-mismatch' => 'Annotcay undeleteway ilefay evisionray ithway imestamptay $1: ilenamefay ismatchmay',
 'undelete-bad-store-key'   => 'Annotcay undeleteway ilefay evisionray ithway imestamptay $1: ilefay asway issingmay eforebay eletionday.',
 'undelete-cleanup-error'   => 'Errorway eletingday unusedway archiveway ilefay "$1".',
-'undelete-missing-filearchive' => 'Unableway otay estoreray ilefay archiveway ID $1 ecausebay itway isn\'tway inway ethay atabaseday. Itway aymay avehay alreadyway eenbay undeletedway.',
+'undelete-missing-filearchive' => 'Unableway otay estoreray ilefay archiveway ID $1 ecausebay itway isn\'tway inway ethay atabaseday. Itway aymay avehay 
+alreadyway eenbay undeletedway.',
 'undelete-error-short'     => 'Errorway undeletingway ilefay: $1',
 'undelete-error-long'      => "Errorsway ereway encounteredway ilewhay undeletingway ethay ilefay:\n\n$1\n",
 
@@ -2085,11 +2124,12 @@ agespay atthay ereway andalizedvay).',
 'ipbanononly'                 => 'Ockblay anonymousway usersway onlyway',
 'ipbcreateaccount'            => 'Eventpray accountway eationcray',
 'ipbemailban'                 => 'Eventpray userway omfray endingsay e-mailway',
-'ipbenableautoblock'          => 'Automaticallyway ockblay ethay astlay IP addressway usedway ybay isthay userway, andway anyway ubsequentsay IPs eythay ytray otay editway omfray',
+'ipbenableautoblock'          => 'Automaticallyway ockblay ethay astlay IP addressway usedway ybay isthay userway, andway anyway ubsequentsay IPs eythay 
+ytray otay editway omfray',
 'ipbsubmit'                   => 'Ockblay isthay userway',
 'ipbother'                    => 'Otherway imetay:',
-'ipboptions'                  => '2 ourshay:2 hours,1 ayday:1 day,3 aysday:3 aysday,1 eekway:1 week,2 eeksway:2 weeks,1 onthmay:1 month,3 onthsmay:3 months,6 onthsmay:6 months,1 earyay:1 
-year,infiniteway:infinite',
+'ipboptions'                  => '2 ourshay:2 hours,1 ayday:1 day,3 aysday:3 aysday,1 eekway:1 week,2 eeksway:2 weeks,1 onthmay:1 month,3 onthsmay:3 months,6 
+onthsmay:6 months,1 earyay:1 year,infiniteway:infinite',
 'ipbotheroption'              => 'otherway',
 'ipbotherreason'              => 'Otherway/additionalway easonray:',
 'ipbhidename'                 => 'Idehay usernameway/IP omfray ethay ockblay oglay, activeway ockblay istlay andway userway istlay',
@@ -2103,7 +2143,8 @@ year,infiniteway:infinite',
 'ipb-blocklist-addr'          => 'Iewvay existingway ocksblay orfay $1',
 'ipb-blocklist'               => 'Iewway existingway ocksblay',
 'unblockip'                   => 'Unblockway userway',
-'unblockiptext'               => 'Useway ethay ormfay elowbay otay estoreray itewray accessway otay away eviouslypray ockedblay IP addressway orway usernameway.',
+'unblockiptext'               => 'Useway ethay ormfay elowbay otay estoreray itewray accessway otay away eviouslypray ockedblay IP addressway orway 
+usernameway.',
 'ipusubmit'                   => 'Unblockway isthay addressway',
 'unblocked'                   => '[[User:$1|$1]] ashay eenbay unblockedway',
 'unblocked-id'                => 'Ockblay $1 ashay eenbay emovedray',
@@ -2124,7 +2165,8 @@ year,infiniteway:infinite',
 'blocklink'                   => 'ockblay',
 'unblocklink'                 => 'unblockway',
 'contribslink'                => 'ontribscay',
-'autoblocker'                 => 'Autoblockedway ecausebay ouryay IP addressway ashay eenbay ecentlyray usedway ybay "[[User:$1|$1]]". Ethay easonray ivengay orfay $1\'s ockblay isway: "$2"',
+'autoblocker'                 => 'Autoblockedway ecausebay ouryay IP addressway ashay eenbay ecentlyray usedway ybay "[[User:$1|$1]]". Ethay easonray ivengay 
+orfay $1\'s ockblay isway: "$2"',
 'blocklogpage'                => 'Ockblay oglay',
 'blocklogentry'               => 'ockedblay [[$1]] ithway anway expiryway imetay ofway $2 $3',
 'blocklogtext'                => 'Isthay isway away oglay ofway userway ockingblay andway 
@@ -2144,12 +2186,13 @@ ocksblay.',
 'ip_range_invalid'            => 'Invalidway IP angeray.',
 'proxyblocker'                => 'Oxypray ockerblay',
 'ipb_cant_unblock'            => 'Errorway: Ockblay ID $1 otnay oundfay. Itway aymay avehay eenbay unblockedway alreadyway.',
-'proxyblockreason'            => 'Ouryay IP addressway ashay eenbay ockedblay ecausebay itway isway anway openway oxypray. Easeplay ontactcay ouryay Internetway ervicesay oviderpray orway echtay 
-upportsay andway informway emthay ofway isthay erioussay ecuritysay oblempray.',
+'proxyblockreason'            => 'Ouryay IP addressway ashay eenbay ockedblay ecausebay itway isway anway openway oxypray. Easeplay ontactcay ouryay 
+Internetway ervicesay oviderpray orway echtay upportsay andway informway emthay ofway isthay erioussay ecuritysay oblempray.',
 'proxyblocksuccess'           => 'Oneday.',
 'sorbs'                       => 'DNSBL', # only translate this message to other languages if you have to change it
 'sorbsreason'                 => 'Ouryay IP addressway isway istedlay asway anway openway oxypray inway ethay DNSBL usedway ybay isthay itesay.',
-'sorbs_create_account_reason' => 'Ouryay IP addressway iswayistedlay asway anway openway oxyoray inway ethay DNSBL usedway ybay isthay itesay. Ouyay annotcay eatecray anway accountway',
+'sorbs_create_account_reason' => 'Ouryay IP addressway iswayistedlay asway anway openway oxyoray inway ethay DNSBL usedway ybay isthay itesay. Ouyay annotcay 
+eatecray anway accountway',
 
 # Developer tools
 
@@ -2174,7 +2217,8 @@ Easeplay onfirmcay atthay isthay isway atwhay ouyay intendway otay oday.',
 'lockdbsuccesstext'   => 'Ethay atabaseday ashay eenbay ockedlay.
 <br />Ememberray otay [[Special:Unlockdb|emoveray ethay ocklay]] afterway ouryay aintenancemay isway ompletecay.',
 'unlockdbsuccesstext' => 'Ethay atabaseday ashay eenbay unlockedway.',
-'lockfilenotwritable' => 'Ethay atabaseday ocklay ilefay isway otnay itablewray. Otay ocklay orway unlockway ethay atabaseday, isthay eedsnay otay ebay itablewray ybay ethay ebway erversay.',
+'lockfilenotwritable' => 'Ethay atabaseday ocklay ilefay isway otnay itablewray. Otay ocklay orway unlockway ethay atabaseday, isthay eedsnay otay ebay 
+itablewray ybay ethay ebway erversay.',
 'databasenotlocked'   => 'Ethay atabaseday isway otnay ockedlay.',
 
 # Move page
@@ -2184,11 +2228,11 @@ Ethay oldway itletay illway ecomebay away edirectray agepay otay ethay ewnay itl
 Inkslay otay ethay oldway agepay itletay illway otnay ebay angedchay; ebay uresay otay
 eckchay orfay oubleday orway okenbray edirectsray.
 Ouyay areway esponsibleray orfay akingmay uresay atthay inkslay ontinuecay otay ointpay erewhay eythay areway upposedsay otay ogay.
- 
-Otenay atthay ethay agepay illway '''ot'''nay ebay ovedmay ifway erethay isway alreadyway away agepay atway ethay ewnay itletay, unlessway itway isway emptyway orway away edirectray andway ashay onay 
-astpay editway istoryhay. Isthay eansmay atthay ouyay ancay enameray away agepay ackbay otay erewhay itway asway ustjay enamedray omfray ifway ouyay akemay away istakemay, andway ouyay annotcay 
-overwriteway anway existingway agepay.
- 
+
+Otenay atthay ethay agepay illway '''ot'''nay ebay ovedmay ifway erethay isway alreadyway away agepay atway ethay ewnay itletay, unlessway itway isway 
+emptyway orway away edirectray andway ashay onay astpay editway istoryhay. Isthay eansmay atthay ouyay ancay enameray away agepay ackbay otay erewhay itway 
+asway ustjay enamedray omfray ifway ouyay akemay away istakemay, andway ouyay annotcay overwriteway anway existingway agepay.
+
 <b>ARNINGWAY!</b>
 Isthay ancay ebay away asticdray andway unexpectedway angechay 
 orfay away opularpay agepay;
@@ -2196,7 +2240,7 @@ easeplay ebay uresay ouyay understandway ethay onsequencescay ofway isthay efore
 'movepagetalktext'        => "Ethay associatedway alktay agepay illway ebay automaticallyway ovedmay alongway ithway itway '''unlessway:'''
 *Away onnay-emptyway alktay agepay alreadyway existsway underway ethay ewnay amenay, orway
 *Ouyay uncheckway ethay oxbay elowbay.
- 
+
 Inway osethay asescay, ouyay illway avehay otay ovemay orway ergemay ethay agepay anuallymay ifway esiredday.",
 'movearticle'             => 'Ovemay agepay:',
 'movenologin'             => 'Otnay oggedlay inway',
@@ -2207,9 +2251,7 @@ Inway osethay asescay, ouyay illway avehay otay ovemay orway ergemay ethay agepa
 'movepagebtn'             => 'Ovemay agepay',
 'pagemovedsub'            => 'Ovemay ucceededsay',
 'movepage-moved'          => '<big>\'\'\'"$1" ashay eenbay ovedmay otay "$2"\'\'\'</big>', # The two titles are passed in plain text as $3 and $4 to allow additional goodies in the message.
-'articleexists'           => 'Away agepay ofway atthay amenay alreadyway existsway, orway ethay
-amenay ouyay avehay osenchay isway otnay alidvay. 
-Easeplay oosechay anotherway amenay.',
+'articleexists'           => 'Away agepay ofway atthay amenay alreadyway existsway, orway ethay amenay ouyay avehay osenchay isway otnay alidvay. Easeplay oosechay anotherway amenay.',
 'talkexists'              => "'''Ethay agepay itselfway asway ovedmay uccessfullysay, utbay ethay alktay agepay ouldcay otnay 
 ebay ovedmay ecausebay oneway alreadyway existsway atway ethay ewnay itletay. Easeplay ergemay emthay anuallymay.'''",
 'movedto'                 => 'ovedmay otay',
@@ -2224,22 +2266,23 @@ ebay ovedmay ecausebay oneway alreadyway existsway atway ethay ewnay itletay. Ea
 'revertmove'              => 'evertray',
 'delete_and_move'         => 'Eleteday andway ovemay',
 'delete_and_move_text'    => '==Eletionday equiredray==
- 
+
 Ethay estinationday articleway "[[$1]]" alreadyway existsway. Oday ouyay antway otay eleteday itway otay akemay ayway orfay ethay ovemay?',
 'delete_and_move_confirm' => 'Esyay, eleteday ethay agepay',
 'delete_and_move_reason'  => 'Eletedday otay akemay ayway orfay ovemay',
 'selfmove'                => "Ourcesay andway estinationday itlestay areway ethay amesay; an'tcay ovemay away agepay overway itselfway.",
-'immobile_namespace'      => 'Ourcesay orway estinationday itletay isway ofway away ecialspay ypetay; annotcay ovemay agespay omfray andway intoway atthay amespacenay.',
- 
+'immobile_namespace'      => 'Ourcesay orway estinationday itletay isway ofway away ecialspay ypetay; annotcay ovemay agespay omfray andway intoway atthay 
+amespacenay.',
+
 # Export
 'export'            => 'Exportway agespay',
-'exporttext'        => 'Ouyay ancay exportway ethay exttay andway editingway istoryhay ofway away articularpay agepay orway etsay ofway agespay appedwray inway omesay XMLay. Isthay ancay ebay 
-importedway intoway anotherway ikiway usingway EdiaWikimay iavay ethay [[Ecialspay:Importway|importway agepay]].
- 
+'exporttext'        => 'Ouyay ancay exportway ethay exttay andway editingway istoryhay ofway away articularpay agepay orway etsay ofway agespay appedwray 
+inway omesay XMLay. Isthay ancay ebay importedway intoway anotherway ikiway usingway EdiaWikimay iavay ethay [[Ecialspay:Importway|importway agepay]].
+
 Otay exportway agespay, enterway ethay itlestay inway ethay exttay oxbay elowbay, oneway itletay erpay inelay, andway
 electsay etherwhay ouyay antway ethay urrentcay ersionvay asway ellway asway allway oldway ersionsvay, ithway ethay agepay
 istoryhay ineslay, orway ustjay ethay urrentcay ersionvay ithway ethay infoway aboutway ethay astlay editway.
- 
+
 Inway ethay atterlay asecay ouyay ancay alsoway useway away inklay, eway.gay. [[{{ns:Special}}:Exportway/{{MediaWiki:
 Mainpage}}]] orfay ethay agepay "[[{{MediaWiki:Mainpage}}]]".',
 'exportcuronly'     => 'Includeway onlyway ethay urrentcay evisionray, otnay ethay ullfay istoryhay',
@@ -2249,7 +2292,7 @@ Mainpage}}]] orfay ethay agepay "[[{{MediaWiki:Mainpage}}]]".',
 'export-addcattext' => 'Addway agespay omfray ategorycay:',
 'export-addcat'     => 'Addway',
 'export-download'   => 'Offerway otay avesay asway away ilefay',
- 
+
 # Namespace 8 related
 'allmessages'               => 'Ystemsay essagesmay',
 'allmessagesname'           => 'Amenay',
@@ -2259,7 +2302,7 @@ Mainpage}}]] orfay ethay agepay "[[{{MediaWiki:Mainpage}}]]".',
 'allmessagesnotsupportedDB' => "'''{{ns:special}}:Allmessages''' annotcay ebay usedway ecausebay '''\$wgUseDatabaseMessages''' isway itchedsway offway.",
 'allmessagesfilter'         => 'Essagemay amenay ilterfay:',
 'allmessagesmodified'       => 'Owshay onlyway odifiedmay',
- 
+
 # Thumbnails
 'thumbnail-more'           => 'Enlargeway',
 'missingimage'             => '<b>Issingmay imageway</b><br /><i>$1</i>',
@@ -2269,7 +2312,7 @@ Mainpage}}]] orfay ethay agepay "[[{{MediaWiki:Mainpage}}]]".',
 'djvu_no_xml'              => 'Unableway otay etchfay XML orfay DjVu ilefay',
 'thumbnail_invalid_params' => 'Invalidway umbnailthay arameterspay',
 'thumbnail_dest_directory' => 'Unableway otay eatecray estinationday irectoryday',
- 
+
 # Special:Import
 'import'                     => 'Importway agespay',
 'importinterwiki'            => 'Answikitray importway',
@@ -2279,8 +2322,8 @@ Allway answikitray importway actionsway areway oggedlay atway ethay [[Ecialspay:
 'import-interwiki-history'   => 'Opycay allway istoryhay ersionsvay orfay isthay agepay',
 'import-interwiki-submit'    => 'Importway',
 'import-interwiki-namespace' => 'Ansfertray agespay intoway amespacenay:',
-'importtext'                 => 'Easeplay exportway ethay ilefay omfray ethay ourcesay ikiway usingway ethay Ecialspay:Exportway utilityway, avesay itway otay ouryay iskday andway uploadway itway 
-erehay.',
+'importtext'                 => 'Easeplay exportway ethay ilefay omfray ethay ourcesay ikiway usingway ethay Ecialspay:Exportway utilityway, avesay itway 
+otay ouryay iskday andway uploadway itway erehay.',
 'importstart'                => 'Importingway agespay...',
 'import-revision-count'      => '$1 {{PLURAL:$1|evisionray|evisionsray}}',
 'importnopages'              => 'Onay agespay otay importway.',
@@ -2294,7 +2337,7 @@ erehay.',
 'importnosources'            => 'Onay answikitray importway ourcessay avehay eenbay efinedday andway irectday istoryhay uploadsway areway isabledday.',
 'importnofile'               => 'Onay importway ilefay asway uploadedway.',
 'importuploaderror'          => 'Uploadway ofway importway ilefay ailedfay; erhapspay ethay ilefay isway iggerbay anthay ethay allowedway uploadway izesay.',
- 
+
 # Import log
 'importlogpage'                    => 'Importway oglay',
 'importlogpagetext'                => 'Administrativeway importsway ofway agespay ithway editway istoryhay omfray otherway ikisway.',
@@ -2302,7 +2345,7 @@ erehay.',
 'import-logentry-upload-detail'    => '$1 evisionray(say)',
 'import-logentry-interwiki'        => 'answikiedtray $1',
 'import-logentry-interwiki-detail' => '$1 evisionray(say) omfray $2',
- 
+
 
 # Tooltip help for the actions
 'tooltip-pt-userpage'             => 'Ymay userway agepay',
@@ -2363,20 +2406,20 @@ erehay.',
 'tooltip-watch'                   => 'Addway isthay agepay otay ouryay atchlistway',
 'tooltip-recreate'                => 'Ecreateray ethay agepay espiteday itway ashay eenbay eletedday',
 'tooltip-upload'                  => 'Artstay uploadway',
- 
+
 # Stylesheets
 'common.css'   => '/** CSS acedplay erehay illway ebay appliedway otay allway insskay */',
 'monobook.css' => '/* CSS acedplay erehay illway affectway usersway ofway ethay MonoBook inskay */',
- 
+
 # Scripts
 'common.js'   => '/* Anyway JavaScript erehay illway ebay oadedlay orfay allway usersway onway everyway agepay oadlay. */',
 'monobook.js' => '/* Eprecatedday; useway [[MediaWiki:Common.js]] */',
- 
+
 # Metadata
 'nodublincore'      => 'Dublin Core RDF etadatamay isabledday orfay isthay erversay.',
 'nocreativecommons' => 'Creative Commons RDF etadatamay isabledday orfay isthay erversay.',
 'notacceptable'     => "Ethay ikiway erversay an'tcay ovidepray ataday inway away ormatfay ouryay ientclay ancay eadray.",
- 
+
 # Attribution
 'anonymous'        => 'Anonymousway userway(say) ofway {{SITENAME}}',
 'siteuser'         => '{{SITENAME}} userway $1',
@@ -2387,10 +2430,11 @@ erehay.',
 'siteusers'        => '{{SITENAME}} userway(say) $1',
 'creditspage'      => 'Agepay editscray',
 'nocredits'        => 'Erethay isway onay editscray infoway availableway orfay isthay agepay.',
- 
+
 # Spam protection
 'spamprotectiontitle'    => 'Amspay otectionpray ilterfay',
-'spamprotectiontext'     => 'Ethay agepay ouyay antedway otay avesay asway ockedblay ybay ethay amspay ilterfay. Isthay isway obablypray ausedcay ybay away inklay otay anway externalway itesay.',
+'spamprotectiontext'     => 'Ethay agepay ouyay antedway otay avesay asway ockedblay ybay ethay amspay ilterfay. Isthay isway obablypray ausedcay ybay away 
+inklay otay anway externalway itesay.',
 'spamprotectionmatch'    => 'Ethay ollowingfay exttay isway atwhay iggeredtray ourway amspay ilterfay: $1',
 'subcategorycount'       => 'Erethay {{PLURAL:$1|isway oneway ubcategorysay|areway $1 ubcategoriessay}} otay isthay ategorycay.',
 'categoryarticlecount'   => 'Erethay {{PLURAL:$1|isway oneway articleway|areway $1 articlesway}} inway isthay ategorycay.',
@@ -2399,7 +2443,7 @@ erehay.',
 'spambot_username'       => 'MediaWiki spam cleanup',
 'spam_reverting'         => 'Evertingray otay astlay ersionvay otnay ontainingcay inkslay otay $1',
 'spam_blanking'          => 'Allway evisionsray ontainedcay inkslay otay $1, ankingblay',
- 
+
 # Info page
 'infosubtitle'   => 'Informationway orfay agepay',
 'numedits'       => 'Umbernay ofway editsway (articleway): $1',
@@ -2407,7 +2451,7 @@ erehay.',
 'numwatchers'    => 'Umbernay ofway atchersway: $1',
 'numauthors'     => 'Umbernay ofway istinctday authorsway (articleway): $1',
 'numtalkauthors' => 'Umbernay ofway istinctday authorsway (iscussionday agepay): $1',
- 
+
 # Math options
 'mw_math_png'    => 'Alwaysway enderray PNG',
 'mw_math_simple' => 'HTML ifway eryvay implesay orway elseway PNG',
@@ -2415,7 +2459,7 @@ erehay.',
 'mw_math_source' => 'Eavelay itway asway TeX (orfay exttay owsersbray)',
 'mw_math_modern' => 'Ecommendedray orfay odernmay owsersbray',
 'mw_math_mathml' => 'MathML ifway ossiblepay (experimentalway)',
- 
+
 # Patrolling
 'markaspatrolleddiff'                 => 'Arkmay asway atrolledpay',
 'markaspatrolledtext'                 => 'Arkmay isthay articleway asway atrolledpay',
@@ -2426,13 +2470,13 @@ erehay.',
 'markedaspatrollederror'              => 'Annotcay arkmay asway atrolledpay',
 'markedaspatrollederrortext'          => 'Ouyay eednay otay ecifyspay away evisionray otay arkmay asway atrolledpay.',
 'markedaspatrollederror-noautopatrol' => 'Ouyay areway otnay allowedway otay arkmay ouryay ownway angeschay asway atrolledpay.',
- 
+
 # Patrol log
 'patrol-log-page'   => 'Atrolpay oglay',
 'patrol-log-line'   => 'arkedmay $1 ofway $2 atrolledpay $3',
 'patrol-log-auto'   => '(automaticway)',
 'patrol-log-diff'   => 'r$1',
- 
+
 # Image deletion
 'deletedrevision' => 'Eletedday oldway evisionray $1.',
 'filedeleteerror-short' => "Errorway eletingday ilefay: $1",
@@ -2441,13 +2485,14 @@ erehay.',
 'filedelete-old-unregistered' => 'Ethay ecifiedspay ilefay evisionray "$1" isway otnay inway ethay atabaseday.',
 'filedelete-current-unregistered' => 'Ethay ecifiedspay ilefay "$1" isway otnay inway ethay atabaseday.',
 'filedelete-archive-read-only' => 'Ethay archiveway irectoryday "$1" isway otnay itablewray ybay ethay ebserverway.',
- 
+
 # Browsing diffs
 'previousdiff' => '← Eviouspray iffday',
 'nextdiff'     => 'Extnay iffday →',
- 
+
 # Media information
-'mediawarning'         => "'''Arningway''': Isthay ilefay aymay ontaincay aliciousmay odecay, ybay executingway itway ouryay ystemsay aymay ebay ompromisedcay.<hr />",
+'mediawarning'         => "'''Arningway''': Isthay ilefay aymay ontaincay aliciousmay odecay, ybay executingway itway ouryay ystemsay aymay ebay 
+ompromisedcay.<hr />",
 'imagemaxsize'         => 'Imitlay imagesway onway imageway escriptionday agespay otay:',
 'thumbsize'            => 'Umbnailthay izesay:',
 'widthheight'          => '$1×$2', # only translate this message to other languages if you have to change it
@@ -2458,25 +2503,26 @@ erehay.',
 'svg-long-desc'        => '(SVG ilefay, ominallynay $1 × $2 ixelspay, ilefay izesay: $3)',
 'show-big-image'       => 'Ullfay esolutionray',
 'show-big-image-thumb' => '<small>Izesay ofway isthay eviewpray: $1 × $2 ixelspay</small>',
- 
+
 # Special:Newimages
 'newimages'         => 'Allerygay ofway ewnay ilesfay',
 'newimages-summary' => '', # only translate this message to other languages if you have to change it
 'showhidebots'      => '($1 otsbay)',
 'noimages'          => 'Othingnay otay eesay.',
- 
+
 # Video information, used by Language::formatTimePeriod() to format lengths in the above messages
 'video-dims'     => '$1, $2×$3', # only translate this message to other languages if you have to change it
 'seconds-abbrev' => 's', # only translate this message to other languages if you have to change it
 'minutes-abbrev' => 'm', # only translate this message to other languages if you have to change it
 'hours-abbrev'   => 'h', # only translate this message to other languages if you have to change it
- 
+
 # Bad image list
 'bad_image_list' => 'Ethay ormatfay isway asway ollowsfay:
- 
-Onlyway istlay itemsway (ineslay artingstay ithway *) areway onsideredcay. Ethay irstfay inklay onway away inelay ustmay ebay away inklay otay away adbay imageway. Anyway ubsequentsay inkslay onway 
-ethay amesay inelay areway onsideredcay otay ebay exceptionsway, iway.eway. articlesway erewhay ethay imageway aymay occurway inlineway.',
- 
+
+Onlyway istlay itemsway (ineslay artingstay ithway *) areway onsideredcay. Ethay irstfay inklay onway away inelay ustmay ebay away inklay otay away adbay 
+imageway. Anyway ubsequentsay inkslay onway ethay amesay inelay areway onsideredcay otay ebay exceptionsway, iway.eway. articlesway erewhay ethay imageway 
+aymay occurway inlineway.',
+
 /*
 Short names for language variants used for language conversion links.
 To disable showing a particular link, set it to 'disable', e.g.
@@ -2488,20 +2534,20 @@ Variants for Chinese language
 'variantname-zh-hk' => 'hk', # only translate this message to other languages if you have to change it
 'variantname-zh-sg' => 'sg', # only translate this message to other languages if you have to change it
 'variantname-zh'    => 'zh', # only translate this message to other languages if you have to change it
- 
+
 # Variants for Serbian language
 'variantname-sr-ec' => 'sr-ec', # only translate this message to other languages if you have to change it
 'variantname-sr-el' => 'sr-el', # only translate this message to other languages if you have to change it
 'variantname-sr-jc' => 'sr-jc', # only translate this message to other languages if you have to change it
 'variantname-sr-jl' => 'sr-jl', # only translate this message to other languages if you have to change it
 'variantname-sr'    => 'sr', # only translate this message to other languages if you have to change it
- 
+
 # Variants for Kazakh language
 'variantname-kk-tr' => 'kk-tr', # only translate this message to other languages if you have to change it
 'variantname-kk-kz' => 'kk-kz', # only translate this message to other languages if you have to change it
 'variantname-kk-cn' => 'kk-cn', # only translate this message to other languages if you have to change it
 'variantname-kk'    => 'kk', # only translate this message to other languages if you have to change it
- 
+
 # Variants for Kurdish language
 'variantname-ku-arab' => 'ku-arab', # only translate this message to other languages if you have to change it
 'variantname-ku-latn' => 'ku-latn', # only translate this message to other languages if you have to change it
@@ -2509,8 +2555,8 @@ Variants for Chinese language
 
 # Metadata
 'metadata'          => 'Metadata',
-'metadata-help'     => 'This file contains additional information, probably added from the digital camera or scanner used to create or digitize it. If the file has been modified from its original 
-state, some details may not fully reflect the modified image.',
+'metadata-help'     => 'This file contains additional information, probably added from the digital camera or scanner used to create or digitize it. If the 
+file has been modified from its original state, some details may not fully reflect the modified image.',
 'metadata-expand'   => 'Show extended details',
 'metadata-collapse' => 'Hide extended details',
 'metadata-fields'   => 'EXIF metadata fields listed in this message will
@@ -2817,8 +2863,9 @@ informationway.',
 'confirmemail_noemail'    => 'Ouyay oday otnay avehay away alidvay emailway addressway etsay 
 inway ouryay [[Ecialspay:Eferencespray|userway eferencespray]].',
 'confirmemail_text'       => 'Isthay ikiway equiresray atthay ouyay alidatevay ouryay eway-ailmay addressway
-eforebay usingway eway-ailmay eaturesfay. Activateway ethay uttonbay elowbay otay endsay away onfirmationcay ailmay otay ouryay addressway. Ethay ailmay illway includeway away inklay ontainingcay 
-away odecay; oadlay ethay inklay inway ouryay owserbray otay onfirmcay atthay ouryay eway-ailmay addressway isway alidvay.',
+eforebay usingway eway-ailmay eaturesfay. Activateway ethay uttonbay elowbay otay endsay away onfirmationcay ailmay otay ouryay addressway. Ethay ailmay 
+illway includeway away inklay ontainingcay away odecay; oadlay ethay inklay inway ouryay owserbray otay onfirmcay atthay ouryay eway-ailmay addressway isway 
+alidvay.',
 'confirmemail_pending'    => '<div class="error">
 Away onfirmationcay odecay ashay alreadyway eenbay eway-ailedmay
  otay ouyay; ifway ouyay ecentlyray
@@ -2952,8 +2999,8 @@ antway otay oday isthay? Ouyay ancay alsoway [[Special:Watchlist/edit|emoveray i
 ereway emovedray.',
 'watchlistedit-normal-title'   => 'Editway atchlistway',
 'watchlistedit-normal-legend'  => 'Emoveray itlestay omfray atchlistway',
-'watchlistedit-normal-explain' => 'Itlestay onway ouryay atchlistway areway ownshay elowbay. Otay emoveray away itletay, eckchay ethay oxbay extnay otay itway, andway ickclay Emoveray Itlestay. Ouyay 
-ancay alsoway [[Special:Watchlist/raw|editway ethay awray istlay]],
+'watchlistedit-normal-explain' => 'Itlestay onway ouryay atchlistway areway ownshay elowbay. Otay emoveray away itletay, eckchay ethay oxbay extnay otay 
+itway, andway ickclay Emoveray Itlestay. Ouyay ancay alsoway [[Special:Watchlist/raw|editway ethay awray istlay]],
 orway [[Special:Watchlist/clear|emoveray allway itlestay]].',
 'watchlistedit-normal-submit'  => 'Emoveray Itlestay',
 'watchlistedit-normal-done'    => '{{PLURAL:$1|1 itletay asway|$1 itlestay ereway}} emovedray omfray ouryay atchlistway:',
