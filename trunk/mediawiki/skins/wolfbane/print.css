@@ -1,0 +1,19 @@
+.nav2{
+display: none;
+} 
+.gad{
+display: none;
+}
+.usert{
+display: none;
+visibility: hidden;
+}
+.user{
+display: none;
+}
+#user{
+display: none;
+}
+.printfooter{
+display: block;
+}
