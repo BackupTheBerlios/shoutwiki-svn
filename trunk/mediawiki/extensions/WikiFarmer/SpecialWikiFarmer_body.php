@@ -53,6 +53,8 @@ class WikiFarmerForm {
             $this->showFormExtensions( );
         } elseif ( $mode=='conf' ) {
             $this->showFormConf( $extra );
+        } elseif ( $mode=='' ) {
+            #Just nothing
         } else {
             $this->showError( wfMsg( 'wikifarmer-unknown-title' ), wfMsg( 'wikifarmer-unknown-text', $mode ) );
         }
