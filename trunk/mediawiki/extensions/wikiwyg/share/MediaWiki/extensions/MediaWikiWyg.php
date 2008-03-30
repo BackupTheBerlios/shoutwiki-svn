@@ -19,6 +19,9 @@ $wgExtensionCredits['other'][] = array(
     'description' => 'MediaWiki integration of the Wikiwyg WYSIWYG wiki editor'
 );
 
+$dir = dirname(__FILE__) . '/';
+$wgExtensionMessagesFiles['Wikiwyg'] = $dir . 'Wikiwyg.i18n.php';
+
 function wfGetDependingOnSkin () {
     $useInPageTrue = '';
     global $wgCookiePrefix, $wgUser, $wgInPageEnabled;
@@ -59,16 +62,7 @@ function registerWikiwygExtension() {
 	return;
     }
 
-    $wgMessageCache->addMessages(
-    	array(
-		'wysiwygcaption' => 'Visual editing',
-		'insertimage' => 'Insert image',
-		'save' => 'Save',
-		'wysiwygcaption' => 'Visual editing',
-		'insertimage' => 'Insert image',
-		'edit-summary' => 'Edit summary'
-	)
-    );
+	wfLoadExtensionMessages( 'Wikiwyg' );
 
     if (! isset($wgWikiwygPath)) {
         $wgWikiwygPath = $wgScriptPath . "/extensions/wikiwyg";
@@ -305,10 +299,7 @@ $parserOptions = ParserOptions::newFromUser( $wgUser );
 	}
 }
 
-global $wgMessageCache;
-SpecialPage::addPage( new EZParser );
-$wgMessageCache->addMessage( 'ezparser', 'Simple parser test' );
-
+$wgSpecialPages['EZParser'] = 'EZParser';
 }
 
 $wgExtensionFunctions[] = 'wfPocketDiff';
@@ -369,21 +360,11 @@ class PocketDiff extends UnlistedSpecialPage {
 	}
 }
 
-global $wgMessageCache;
-SpecialPage::addPage( new PocketDiff );
-$wgMessageCache->addMessage( 'pocketdiff', 'retrieves difference' );
-
+$wgSpecialPages['PocketDiff'] = 'PocketDiff';
 }
 
 function wfWikiwygToggle ($toggles) {
-	global $wgMessageCache, $wgWysiwygEnabled;
-	$wgMessageCache->addMessages (
-		array (
-			'tog-in-page' => 'use in-page editor',
-			'wysiwygdef' => 'wysiwyg default mode',
-			'wikitextdef' => 'wikitext default mode'
-		)
-	) ;
+	global $wgWysiwygEnabled;
 	$toggles ["in-page"] = "in-page";
 	return true;
 }

@@ -78,14 +78,14 @@ function WikiwygAlternateEdit ($epage) {
     $wgOut->addScript("<script type=\"text/javascript\" src=\"$wgWikiwygJsPath/MediaWikiWyg.js\"></script>\n");
     $fixed_art_path = preg_replace ('/\$1/', "", $wgArticlePath);
 
-    $alternate_link = "<a href=\"".$fixed_art_path."Special:Preferences#prefsection-4\" >".wfMsg ('wikiwyg_editing_here')."</a>" ;
+    $alternate_link = "<a href=\"".$fixed_art_path."Special:Preferences#prefsection-4\" >".wfMsg ('wikiwyg_editing_here')."</a>";
     $has_cloud = wfIsCategoryCloudAllowed ($epage);
 
     $subtitle_text = wfMsg ('wikiwyg_editing_option', $alternate_link);
     if ($has_cloud) {
-	$nocloud_link = "<a href=\"".$fixed_art_path.$epage->mArticle->mTitle->getPrefixedUrl()."?action=edit&categoryCloud=off\" >".wfMsg ('wikiwyg_editing_this')."</a>" ;
+	$nocloud_link = "<a href=\"".$fixed_art_path.$epage->mArticle->mTitle->getPrefixedUrl()."?action=edit&categoryCloud=off\" >".wfMsg ('wikiwyg_editing_this')."</a>";
     } else {
-	$nocloud_link = "<a href=\"".$fixed_art_path.$epage->mArticle->mTitle->getPrefixedUrl()."?action=edit&categoryCloud=on\" >".wfMsg ('wikiwyg_editing_this')."</a>" ;
+	$nocloud_link = "<a href=\"".$fixed_art_path.$epage->mArticle->mTitle->getPrefixedUrl()."?action=edit&categoryCloud=on\" >".wfMsg ('wikiwyg_editing_this')."</a>";
 	$subtitle_text .=  wfMsg('wikiwyg_use_cloud', $nocloud_link);
     }
 
@@ -127,13 +127,12 @@ function WikiwygHideTextarea ($epage, $hidden) {
 }
 
 function WikiwygEditTagCloud ($epage) {
-    global $wgOut, $wgRequest;
+    global $IP, $wgOut, $wgRequest;
     if (wfGetDependingOnSkin () == 1) {
     	/* only for NS_MAIN, except on override */
 	if ( !wfIsCategoryCloudAllowed ($epage) ) {
 		return true;
 	}
-	global $IP;
 	require_once($IP. 'extensions/wikiwyg/share/MediaWiki/extensions/TagCloud/TagCloudClass.php');
 
 	    $MyCloud = new TagCloud;

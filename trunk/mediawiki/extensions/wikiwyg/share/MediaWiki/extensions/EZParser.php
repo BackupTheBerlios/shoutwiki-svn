@@ -8,6 +8,8 @@ $wgAvailableRights[] = 'ezparser';
 
 $wgGroupPermissions['ezparser']['ezparser'] = true;
 
+$wgSpecialPages['EZParser'] = 'EZParser';
+
 function wfEZParser() {
 global $IP;
 require_once( $IP.'/includes/SpecialPage.php' );
@@ -67,10 +69,6 @@ EOF
 		);
 	}
 }
-
-global $wgMessageCache;
-SpecialPage::addPage( new EZParser );
-$wgMessageCache->addMessage( 'ezparser', 'Simple parser test' );
 
 }
 } # End if(defined MEDIAWIKI)
