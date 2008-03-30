@@ -68,12 +68,25 @@ class MonoBookTemplate extends QuickTemplate {
 		<!--[if lt IE 7]><script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath') ?>/common/IEFixes.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"></script>
 		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
 		
-		<?php print Skin::makeGlobalVariablesScript( $this->data ); ?>
+        <?php print Skin::makeGlobalVariablesScript( $this->data ); ?>
+ 		
+ 		    <!-- YUI -->
+             <script type="text/javascript" src="<?php echo $GLOBALS['wgYuiPath'] ?>/utilities/utilities.js"></script>
+             <script type="text/javascript" src="<?php echo $GLOBALS['wgYuiPath'] ?>/container/container-min.js"></script>
+             <script type="text/javascript" src="<?php echo $GLOBALS['wgYuiPath'] ?>/autocomplete/autocomplete-min.js"></script>
+             <script type="text/javascript" src="<?php echo $GLOBALS['wgYuiPath'] ?>/logger/logger-min.js"></script>
+             <script type="text/javascript" src="<?php echo $GLOBALS['wgYuiPath'] ?>/3rdpart/yui-cookie.js"></script>
+             <script type="text/javascript" src="<?php echo $GLOBALS['wgYuiPath'] ?>/3rdpart/tools-min.js"></script>
+             <script type="text/javascript" src="<?php $this->text('stylepath') ?>/common/tracker.js?<?= $GLOBALS['wgStyleVersion'] ?>"></script>
                 
 		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/common/wikibits.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script>
 		<!-- Head Scripts -->
 <?php $this->html('headscripts') ?>
-<?php	if($this->data['jsvarurl'  ]) { ?>
+
+         <link rel="stylesheet" type="text/css" href="http://images.wikia.com/common/yui/container/assets/container.css" />
+         <link rel="stylesheet" type="text/css" href="http://images.wikia.com/common/yui/logger/assets/logger.css" />
+ 
+ 		<?php	if($this->data['jsvarurl']) { ?>
 		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('jsvarurl'  ) ?>"><!-- site js --></script>
 <?php	} ?>
 <?php	if($this->data['pagecss'   ]) { ?>
@@ -106,7 +119,32 @@ class MonoBookTemplate extends QuickTemplate {
 			<?php if($this->data['newtalk'] ) { ?><div class="usermessage"><?php $this->html('newtalk')  ?></div><?php } ?>
 			<?php if($this->data['showjumplinks']) { ?><div id="jump-to-nav"><?php $this->msg('jumpto') ?> <a href="#column-one"><?php $this->msg('jumptonavigation') ?></a>, <a href="#searchInput"><?php $this->msg('jumptosearch') ?></a></div><?php } ?>
 			<!-- start content -->
-			<?php $this->html('bodytext') ?>
+            <?php $this->html('bodytext') ?>
+                                         <?php
+                                                 global $wgRightsText, $wgInPageEnabled, $wgOut;
+                                                 //make people happy and load only when wikiwyg is enabled - Bartek
+                                                 if ( isset($wgInPageEnabled)) {
+                                                         //if (wfGetDependingOnSkin () == 1) {
+                                                                 echo "<div id=\"editpage-copywarn\" style=\"display: none\">\n";
+                                                                 $copywarn =
+                                                                 wfMsg( $wgRightsText ? 'copyrightwarning' : 'copyrightwarning2',
+                                                                                 '[[' . wfMsgForContent( 'copyrightpage' ) . ']]',
+                                                                                 $wgRightsText );
+ 
+                                                                         global $wgTitle;
+                                                                         global $wgParser;
+ 
+                                                                         $popts = $wgOut->parserOptions();
+                                                                         $popts->setTidy(false);
+ 
+                                                                         $parserOutput = $wgParser->parse( $copywarn, $wgTitle, $popts,
+                                                                                         $true, true, $wgOut->mRevisionId );
+                                                                         echo $parserOutput->getText ();
+                                                                 echo "\n</div>";
+                                                         //}
+                                                 }
+                                         ?>
+ 
 			<?php if($this->data['catlinks']) { ?><div id="catlinks"><?php       $this->html('catlinks') ?></div><?php } ?>
 			<!-- end content -->
 			<div class="visualClear"></div>
