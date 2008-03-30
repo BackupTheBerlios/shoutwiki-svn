@@ -42,8 +42,7 @@ class AjaxLogin {
         //return $r;
 
         $msg = '';
-		switch ($userlogin->authenticateUserData())
-		{
+		switch ($userlogin->authenticateUserData()) {
 			case LoginForm::SUCCESS:
                 $wgUser->setCookies();
                 $msg = wfMsgWikiHtml( 'loginsuccess', $wgUser->getName() );

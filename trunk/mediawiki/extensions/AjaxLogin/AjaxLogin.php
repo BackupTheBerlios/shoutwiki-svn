@@ -9,7 +9,7 @@ $wgExtensionCredits['other'][] = array(
 	'version' => preg_replace('/^.* (\d\d\d\d-\d\d-\d\d) .*$/', '\1', '$LastChangedDate: $'), #just the date of the last change
 	'description' => 'Login/logout using AJAX instead of Special: pages',
 	#'descriptionmsg' => 'ajaxlogin-desc',
-	'author' => 'Misza13',
+	'author' => 'Misza',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:AjaxLogin',
 );
 
