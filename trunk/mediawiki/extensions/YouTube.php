@@ -2,7 +2,7 @@
 /**
  * YouTube parser extension - adds <youtube> tag
  * @author Jack Phoenix <wikia.jack@gmail.com>
- * @copyright © 2008 Jack Phoenix
+ * @copyright Â© 2008 Jack Phoenix
  */
 if(!defined('MEDIAWIKI')) {
         echo("This file is an extension to the MediaWiki software and is not a valid access point");
