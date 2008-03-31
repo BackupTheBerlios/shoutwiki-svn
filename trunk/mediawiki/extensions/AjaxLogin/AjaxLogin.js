@@ -40,7 +40,7 @@ function AjaxLogin_perform_logout(progress_msg) {
 }
 
 addOnloadHook(function(){
-    var anonlogin = document.getElementById("pt-anonlogin");
+    var anonlogin = document.getElementById("pt-login");
     if (anonlogin) {
         anonlogin.firstChild.onclick = AjaxLogin_popup_login_form;
         anonlogin.firstChild.href = '#';
