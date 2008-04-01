@@ -41,6 +41,10 @@ class IRC extends IncludableSpecialPage {
                 $ircWidth = wfMsg('ircWidth');              // 640
                 $ircHeight = wfMsg('ircHeight');            // 400
                 $ircAltNick = wfMsg('ircAltNick');          // Guest???
+				$ircQuitMsg = wfMsg('ircQuitMsg');			// Quit message
+				$ircRealName = wfMsg('ircRealName');		// Real name that's show on /whois queries
+				$ircNoJava = wfMsg('ircNoJava');			// Title of the Java not enabled error
+				$ircJavaNotEnabled wfMsg('ircJavaNotEnabled'); // If the user hasn't got Java or it's not turned on, display this error instead
  
                 // If page was called with a parameter join that channel
                 if ($par) $ircJoinChannel = "#".$par;
@@ -51,12 +55,12 @@ class IRC extends IncludableSpecialPage {
                 $ircApplet .= '<param name="nick" value="'.$ircNick.'">
                         <param name="alternatenick" value="'.$ircAltNick.'">
                         <param name="userid" value="wikichat">
-                        <param name="name" value="Wiki User">
+                        <param name="name" value="'.$ircRealName.'">
                         <param name="host" value="'.$ircServer.'">
                         <param name="port" value="'.$ircServerPort.'">
                         <param name="gui" value="pixx">
  
-                        <param name="quitmessage" value="Long live the Cabal!">
+                        <param name="quitmessage" value="'.$ircQuitMsg.'">
                         <param name="asl" value="true">
                         <param name="useinfo" value="true">'."\n";
                 if ($ircJoinChannel) $ircApplet .= '<param name="Command1" value="/join '.$ircJoinChannel.'">'."\n";
@@ -98,8 +102,8 @@ class IRC extends IncludableSpecialPage {
                         <param name="pixx:styleselector" value="true">
                         <param name="pixx:setfontonstyle" value="true">
  
-                        <h1>No java support</h1>
-                        <p><font color="green">Sorry, but you need a Java 1.4.x enabled browser to use PJIRC.</font></p>
+                        <h1>'.$ircNoJava.'</h1>
+                        <p>'.$ircJavaNotEnabled.'</p>
                         </applet>';
 				//$wgOut->addHTML("<!--".$ircApplet."-->"); // for debugging
                 $wgOut->addHTML($ircApplet);

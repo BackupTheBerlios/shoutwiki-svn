@@ -22,6 +22,10 @@ $messages['en'] = array(
     'ircWidth'     => '640',
     'ircHeight'    => '400',
     'ircAltNick'   => 'Anon???',
+	'ircQuitMsg' => 'Leaving',
+	'ircRealName' => 'ShoutWiki IRC user',
+	'ircNoJava' => 'No java support',
+	'ircJavaNotEnabled' => '<span style="color:green">Sorry, but you need a Java 1.4.x enabled browser to use PJIRC.</font>',
 );
 /* German (Deutsch)
  * @author Jan M. Simons <jamasi at piratenpartei.de>
