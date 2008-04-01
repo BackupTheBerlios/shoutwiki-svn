@@ -17,12 +17,11 @@ $messages['en'] = array(
     'ircCabinets'  => '',
     'ircLangExt'   => '',
     'ircServer'    => 'irc.freenode.net',
-    'ircServerPort'        => '6667',
+    'ircServerPort'  => '6667',
     'ircJoinChannel'=> '',
     'ircWidth'     => '640',
     'ircHeight'    => '400',
     'ircAltNick'   => 'Anon???',
-    'ircNick'      => ''
 );
 /* German (Deutsch)
  * @author Jan M. Simons <jamasi at piratenpartei.de>

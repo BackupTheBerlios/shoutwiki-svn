@@ -10,23 +10,18 @@ class IRC extends IncludableSpecialPage {
 				wfLoadExtensionMessages( 'IRC' );
                 $this->setHeaders();
  
-                // Get IrcNickname of the user use MediaWiki username otherwise
+                // Get IrcNickname of the user; use MediaWiki username otherwise
                 If ($wgUser->IsLoggedIn()) {
                         $ircNick = $wgUser->getName();
                 } else {
                         $ircNick = "Guest";
                 }
  
-                if ($wgUser->mId<1) {
-                        // sysop uses MediaWiki:IrcNick
-                        if (wfMsg('ircNick')) $ircNick = wfMsg('ircNick');
-                } else {
-                        // get nickname from userpage
-                        $userpage = $wgUser->getUserPage();
-                        $tmpArticle = new Article(Title::newFromText($userpage->getPrefixedText().'/IrcNick'));
-                        $content = $tmpArticle->fetchContent(0,false,false);
-                        if (trim($content," ")) $ircNick = $content;
-                }
+                // get IRC nickname from userpage
+                $userpage = $wgUser->getUserPage();
+                $tmpArticle = new Article(Title::newFromText($userpage->getPrefixedText().'/IrcNick'));
+                $content = $tmpArticle->fetchContent(0,false,false);
+                if (trim($content," ")) $ircNick = $content;
  
                 //make nickname irc-safe
                 $illegalChars = array(".", "_", "/", "\\", "#", "*", "+", "~", "!");
@@ -36,14 +31,14 @@ class IRC extends IncludableSpecialPage {
                 if ($ircNick == "") $ircNick = "Guest???";
  
                 // load settings (can be overridden with Mediawiki:IrcXyz pages)
-                $ircCodebase = wfMsg('ircCodebase');                // http://yourdomain/IRC
+                $ircCodebase = wfMsg('ircCodebase');        // http://yourdomain/IRC
                 $ircArchive = wfMsg('ircArchive');          // irc.jar,pixx.jar
-                $ircCabinets = wfMsg('ircCabinets');                // irc.cab,securedirc.cab,pixx.cab
+                $ircCabinets = wfMsg('ircCabinets');        // irc.cab,securedirc.cab,pixx.cab
                 $ircLangExt = wfMsg('ircLangExt');          // txt
                 $ircServer = wfMsg('ircServer');            // irc.yourfavourite.net
                 $ircServerPort = wfMsg('ircServerPort');    // 6667
                 $ircJoinChannel = wfMsg('ircJoinChannel');  // #yourChannel
-                $ircWidth = wfMsg('ircWidth');                      // 640
+                $ircWidth = wfMsg('ircWidth');              // 640
                 $ircHeight = wfMsg('ircHeight');            // 400
                 $ircAltNick = wfMsg('ircAltNick');          // Guest???
  
