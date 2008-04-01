@@ -44,7 +44,7 @@ class IRC extends IncludableSpecialPage {
 				$ircQuitMsg = wfMsg('ircQuitMsg');			// Quit message
 				$ircRealName = wfMsg('ircRealName');		// Real name that's show on /whois queries
 				$ircNoJava = wfMsg('ircNoJava');			// Title of the Java not enabled error
-				$ircJavaNotEnabled wfMsg('ircJavaNotEnabled'); // If the user hasn't got Java or it's not turned on, display this error instead
+				$ircJavaNotEnabled = wfMsg('ircJavaNotEnabled'); // If the user hasn't got Java or it's not turned on, display this error instead
  
                 // If page was called with a parameter join that channel
                 if ($par) $ircJoinChannel = "#".$par;
