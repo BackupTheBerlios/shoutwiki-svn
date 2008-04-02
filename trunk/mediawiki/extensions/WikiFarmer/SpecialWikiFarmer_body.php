@@ -5,6 +5,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 );
 }
 
+require_once( "DatabaseFunctions.php" );
+
 class WikiFarmerPage extends SpecialPage {
 	function __construct() {
 		parent::__construct( 'WikiFarmer', 'wikifarmer' );
@@ -67,9 +69,15 @@ class WikiFarmerForm {
     }
 
     function showFormWikis( ) {
-        global $wgOut;
+        global $wgOut, $wgDBerrorLog;
         $wgOut->setSubtitle( wfMsg( 'wikifarmer-wikis-title' ) );
         $wgOut->addWikiText( wfMsg( 'wikifarmer-wikis-text' ) );
+
+        $db = $this->getFarmConn();
+        $wgOut->addHTML( $db->isOpen() ? "1" : "0" );
+        $wgOut->addHTML( $wgDBerrorLog );
+        $db->query( 'SELECT * FROM farmer_wiki' );
+        $db->close();
     }
 
     function showFormExtensions( ) {
@@ -85,5 +93,13 @@ class WikiFarmerForm {
     }
 
     function doSubmit() {
+    }
+
+    function getFarmConn() {
+        return Database::newFromParams(
+            $wgWikiFarmerHost,
+            $wgWikiFarmerUser,
+            $wgWikiFarmerPass,
+            $wgWikiFarmerDB);
     }
 }

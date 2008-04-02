@@ -15,9 +15,9 @@ $wgExtensionCredits['other'][] = array(
 $dir = dirname( __FILE__ );
 
 $wgWikiFarmerHost = 'localhost';
-$wgWikiFarmerDB = 'farmer_db';
 $wgWikiFarmerUser = 'farmer';
 $wgWikiFarmerPass = 'farmers_secret';
+$wgWikiFarmerDB = 'farmer_db';
 
 $wgGroupPermissions['staff']['wikifarmer'] = true;
 

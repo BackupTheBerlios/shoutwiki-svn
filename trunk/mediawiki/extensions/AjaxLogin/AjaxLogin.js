@@ -40,10 +40,12 @@ function AjaxLogin_perform_logout(progress_msg) {
 }
 
 addOnloadHook(function(){
-    var anonlogin = document.getElementById("pt-login");
-    if (anonlogin) {
-        anonlogin.firstChild.onclick = AjaxLogin_popup_login_form;
-        anonlogin.firstChild.href = '#';
+    var login = document.getElementById("pt-login");
+    if (!login)
+        login = document.getElementById("pt-anonlogin");
+    if (login) {
+        login.firstChild.onclick = AjaxLogin_popup_login_form;
+        login.firstChild.href = '#';
     }
 
     var logout = document.getElementById("pt-logout");
