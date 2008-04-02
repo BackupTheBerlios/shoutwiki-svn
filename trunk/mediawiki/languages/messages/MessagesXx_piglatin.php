@@ -4,8 +4,8 @@
  *  
  * @addtogroup Language 
  *
- * @author Pinky <nathaniel7775@yahoo.com>
- * @author Jack Phoenix <wikia.jack@gmail.com>
+ * @author Pinky <pinky@shoutwiki.com>
+ * @author Jack Phoenix <jack@shoutwiki.com>
  * @author Phil E <reflection.insanity@gmail.com>
  *
  *
@@ -1021,14 +1021,9 @@ evisionray ofway isthay agepay.
 Ifway ouyay avesay itway, anyway angeschay ademay incesay isthay 
 evisionray illway ebay ostlay.</strong>',
 'yourdiff'                  => 'Ifferencesday',
-'copyrightwarning'          => "Easeplay otenay atthay allway ontributionscay otay {{SITENAME}} areway onsideredcay otay ebay eleasedray underway ethay $2 
-(eesay $1 orfay
- etailsday). Ifway ouyay on'tday antway ouryay itingwray otay ebay 
-editedway ercilesslymay andway edistributedray atway illway, enthay 
-on'tday ubmitsay itway erehay.<br />
-Ouyay areway alsoway omisingpray usway atthay ouyay otewray isthay 
-ourselfyay, orway opiedcay itway omfray away ublicpay omainday orway 
-imilarsay eefray esourceray.
+'copyrightwarning'          => "Easeplay otenay atthay allway ontributionscay otay {{SITENAME}} areway onsideredcay otay ebay eleasedray underway ethay $2 (eesay $1 orfay etailsday).
+Ifway ouyay on'tday antway ouryay itingwray otay ebay editedway ercilesslymay andway edistributedray atway illway, enthay on'tday ubmitsay itway erehay.<br />
+Ouyay areway alsoway omisingpray usway atthay ouyay otewray isthay ourselfyay, orway opiedcay itway omfray away ublicpay omainday orway imilarsay eefray esourceray.
 <strong>DO NOT SUBMIT COPYRIGHTED WORK WITHOUT PERMISSION!</strong>",
 'copyrightwarning2'         => "Easeplay otenay atthay allway ontributionscay otay {{SITENAME}} aymay ebay editedway, alteredway, orway emovedray ybay 
 otherway 
