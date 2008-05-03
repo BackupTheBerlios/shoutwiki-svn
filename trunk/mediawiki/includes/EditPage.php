@@ -1292,10 +1292,6 @@ END
 <input type='hidden' value=\"{$this->edittime}\" name=\"wpEdittime\" />\n
 <input type='hidden' value=\"{$this->scrolltop}\" name=\"wpScrolltop\" id=\"wpScrolltop\" />\n" );
 
-		wfRunHooks ('EditForm:BeforeDisplayingTextbox', array (&$this, &$hidden) );
-
-		wfRunHooks ('EditForm:BeforeDisplayingTextbox', array (&$this, &$hidden) );
-
 		$wgOut->addHTML( <<<END
 $recreate
 {$commentsubject}
@@ -1308,8 +1304,6 @@ END
 "
 </textarea>
 		" );
-		
-		wfRunHooks ( 'EditForm::AfterEdit:Form', array (&$this) );
 
 		$wgOut->wrapWikiMsg( "<div id=\"editpage-copywarn\">\n$1\n</div>", $copywarnMsg );
 		$wgOut->addHTML( $this->editFormTextAfterWarn );
