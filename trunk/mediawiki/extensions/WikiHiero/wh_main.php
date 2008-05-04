@@ -58,7 +58,7 @@ define("WH_VER_MED",       2);
 define("WH_VER_MIN",       14);
 
 global $wgScriptPath;
-define("WH_IMG_DIR",       $wgScriptPath . '/extensions/wikihiero/img/' ); //"img/"); //
+define("WH_IMG_DIR",       $wgScriptPath . '/extensions/WikiHiero/img/' ); //"img/"); //
 define("WH_IMG_PRE",       "hiero_");
 define("WH_IMG_EXT",       "png");
 
