@@ -3,12 +3,25 @@
 class EditMessagesPage extends SpecialPage {
 
 	function __construct() {
-		parent::__construct( 'EditMessages' );
+		parent::__construct( 'EditMessages', 'siteadmin' );
 	}
 
 	function execute( $subpage = '' ) {
 		global $wgOut, $wgRequest;
 		wfLoadExtensionMessages('EditMessages');
+                if ( $wgUser->isBlocked() ) {
+                $wgOut->blockedPage();
+                return;        
+                }        
+                if ( wfReadOnly() ) {
+                $wgOut->readOnlyPage();            
+                return;        
+                }        
+                if ( !$wgUser->isAllowed( 'siteadmin' ) ) {
+                $this->displayRestrictionError();
+                return;        
+                }
+
 		$this->setHeaders();
 
 		$messageName = $wgRequest->getVal( 'messageName' );
