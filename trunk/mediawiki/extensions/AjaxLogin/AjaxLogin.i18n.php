@@ -55,3 +55,11 @@ $messages['no'] = array (
 	'ajaxlogin-loggingout' => 'Logge ut...',
 	'ajaxlogin-nowloggedout' => 'Du er nå logget ut.<br />Endringene trer i kraft neste gang du laste en side.',
 );
+
+/** Polish (Polskie)
+ * @author ShoutWiki, Inc.
+ */
+$messages['pl'] = array (
+	'ajaxlogin-loggingout' => 'Wylogowywanie...',
+	'ajaxlogin-nowloggedout' => 'Jesteś wylogowany/-a.<br />Zmiany będą widoczne po następnym przeładowaniu strony.',
+);
