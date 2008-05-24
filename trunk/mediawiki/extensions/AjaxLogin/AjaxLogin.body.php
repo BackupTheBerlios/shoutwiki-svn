@@ -81,6 +81,6 @@ class AjaxLogin {
     function processLogoutRequest( ) {
         global $wgUser;
         $wgUser->logout();
-        return new AjaxResponse( wfMsg( 'ajaxlogin-nowloggedout' ) ;
+        return new AjaxResponse( wfMsg( 'ajaxlogin-nowloggedout' ) );
     }
 }
