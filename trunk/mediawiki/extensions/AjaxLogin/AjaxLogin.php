@@ -14,7 +14,7 @@ $wgExtensionCredits['other'][] = array(
 );
 
 $dir = dirname(__FILE__) . '/';
-#$wgExtensionMessagesFiles['AjaxLogin'] = $dir . 'AjaxLogin.i18n.php';
+$wgExtensionMessagesFiles['AjaxLogin'] = $dir . 'AjaxLogin.i18n.php';
 $wgAutoloadClasses['AjaxLogin'] = $dir . 'AjaxLogin.body.php';
 
 $wgAjaxExportList[] = 'AjaxLogin::getLoginForm';

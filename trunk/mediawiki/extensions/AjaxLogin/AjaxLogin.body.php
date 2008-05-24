@@ -75,12 +75,12 @@ class AjaxLogin {
 
     function getLogoutInProgressMessage( ) {
         global $wgScriptPath;
-        return new AjaxResponse( '<img src="' . $wgScriptPath . '/extensions/AjaxLogin/loading.gif" /> Logging out...' ); #TODO: i18n
+        return new AjaxResponse( '<img src="' . $wgScriptPath . '/extensions/AjaxLogin/loading.gif" /> ' . wfMsg( 'ajaxlogin-loggingout' ) );
     }
 
     function processLogoutRequest( ) {
         global $wgUser;
         $wgUser->logout();
-        return new AjaxResponse('You are now logged out.<br/>Changes will take effect the next time you load a page.'); #TODO: i18n
+        return new AjaxResponse( wfMsg( 'ajaxlogin-nowloggedout' ) ;
     }
 }
