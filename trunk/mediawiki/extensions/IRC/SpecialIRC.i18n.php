@@ -37,7 +37,7 @@ $messages['de'] = array(
  * @author Jack Phoenix <jack@shoutwiki.com>
  */
 $messages['fi'] = array(
-    'irc' => 'IRC-keskustelu'
+	'irc' => 'IRC-keskustelu',
 	'irc-quitmsg' => 'Lähdössä',
 	'irc-realname' => 'ShoutWikin IRC-käyttäjä',
 	'irc-nojava' => 'Ei Java-tukea',
