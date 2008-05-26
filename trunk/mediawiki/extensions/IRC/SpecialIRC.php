@@ -4,10 +4,12 @@ if( !defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki packag
 /**
  * A special page extension to offer an PJIRC java-applet to visitors
  *
- * @addtogroup Extensions
+ * @ingroup Extensions
  *
  * @author Jan M. Simons <jamasi at piratenpartei.de>
+ * @author Jack Phoenix <jack@shoutwiki.com>
  * @copyright Copyright © 2007, Jan M. Simons
+ * @copyright Copyright © 2008 Jack Phoenix
  * inspired by http://www.mediawiki.org/wiki/Extension:IRC_Chat from Quentin Sheets
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
@@ -15,7 +17,7 @@ if( !defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki packag
 $wgExtensionCredits['specialpage'][] = array(
     'name' => 'PJIRC',
     'author' => array('Jan M. Simons', 'Jack Phoenix'),
-    'version' => '0.9.2',
+    'version' => '0.9.3',
     'description' => 'Allows users to engage in an IRC chat, using PJIRC through the MediaWiki interface.',
     'url' => 'http://www.mediawiki.org/wiki/Extension:PJIRC',
 );
