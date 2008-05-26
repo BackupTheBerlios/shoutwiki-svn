@@ -1,12 +1,17 @@
 <?php
-/* $Id: $ */
-
+/**
+ * AjaxLogin extension - allows users to log in or out using AJAX
+ *
+ * @author Misza <misza@shoutwiki.com>
+ * @copyright Copyright © Misza -- http://www.misza.net/
+ */
 if (!defined('MEDIAWIKI'))
 	exit;
 
 $wgExtensionCredits['other'][] = array(
 	'name' => 'AjaxLogin',
-	'version' => preg_replace('/^.* (\d\d\d\d-\d\d-\d\d) .*$/', '\1', '$LastChangedDate: $'), #just the date of the last change
+	'svn-date' => '$LastChangedDate$',
+	'svn-revision' => '$LastChangedRevision$',
 	'description' => 'Login/logout using AJAX instead of Special: pages',
 	#'descriptionmsg' => 'ajaxlogin-desc',
 	'author' => 'Misza',
