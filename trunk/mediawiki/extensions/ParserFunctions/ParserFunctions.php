@@ -500,14 +500,16 @@ function wfSetupParserFunctions() {
 	$wgExtParserFunctions = new ExtParserFunctions;
 
 	// Check for SFH_OBJECT_ARGS capability
+	/* DISABLED FOR GREAT SHITE (DOESN'T FUCKING WERK!!!) --Misza
 	if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
 		$wgHooks['ParserFirstCallInit'][] = array( &$wgExtParserFunctions, 'registerParser' );
 	} else {
+	*/
 		if ( class_exists( 'StubObject' ) && !StubObject::isRealObject( $wgParser ) ) {
 			$wgParser->_unstub();
 		}
 		$wgExtParserFunctions->registerParser( $wgParser );
-	}
+	//}
 
 	$wgHooks['ParserClearState'][] = array( &$wgExtParserFunctions, 'clearState' );
 	$wgHooks['ParserAfterTidy'][] = array( &$wgExtParserFunctions, 'afterTidy' );
