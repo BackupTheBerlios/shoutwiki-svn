@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * WikiFarmer extension - allows managing a wiki farm
+ *
+ * @author Misza <misza@shoutwiki.com>
+ * @copyright © 2008 Misza
+ */
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo "WikiFarmer extension\n";
 	exit( 1 ) ;

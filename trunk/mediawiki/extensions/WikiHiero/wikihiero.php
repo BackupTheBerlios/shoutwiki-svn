@@ -6,7 +6,7 @@
 // hieroglyphic texts for computer input" syntax to HTML entities (table and
 // images).
 //
-// Copyright (C) 2004 Guillaume Blanchard (Aoineko)
+// Copyright © 2004 Guillaume Blanchard (Aoineko)
 //
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License
@@ -25,7 +25,11 @@
 //////////////////////////////////////////////////////////////////////////
 
 // Register MediaWiki extension
-$wgExtensionFunctions[] = 'WH_Register';
+if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
+	$wgHooks['ParserFirstCallInit'][] = 'WH_Register';
+} else {
+	$wgExtensionFunctions[] = 'WH_Register';
+}
 $wgExtensionCredits['parserhook'][] = array(
 	'name'           => 'WikiHiero',
 	'author'         => 'Guillaume Blanchard',
@@ -39,6 +43,7 @@ $wgExtensionMessagesFiles['Wikihiero'] =  dirname(__FILE__) . '/wikihiero.i18n.p
 function WH_Register() {
 	global $wgParser;
 	$wgParser->setHook( 'hiero', 'WikiHieroLoader' );
+	return true;
 }
 
 function WikiHieroLoad() {

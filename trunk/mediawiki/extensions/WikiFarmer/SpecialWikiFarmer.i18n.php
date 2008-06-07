@@ -1,7 +1,16 @@
 <?php
+/**
+ * Internationalisation file for the WikiFarmer extension.
+ *
+ * @ingroup Extensions
+ * @author ShoutWiki, Inc.
+ */
 
 $messages = array();
 
+/** English 
+ * @author Misza
+ */
 $messages['en'] = array(
     'wikifarmer-title'          => 'Manage wiki farm',
     'wikifarmer-text'           => 'This is the wiki farm management central.

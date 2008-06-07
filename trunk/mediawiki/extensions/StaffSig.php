@@ -1,10 +1,16 @@
 <?php
 /**
  * StaffSig extension for identifying the staff members
- * @author Jack Phoenix <wikia.jack@gmail.com>
+ *
+ * @author Jack Phoenix <jack@shoutwiki.com>
  * @copyright © 2007-2008 Jack Phoenix
  */
-$wgExtensionFunctions[] = 'wfStaffSig';
+
+if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
+	$wgHooks['ParserFirstCallInit'][] = 'wfStaffSig';
+} else {
+	$wgExtensionFunctions[] = 'wfStaffSig';
+}
 
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'StaffSig',
@@ -16,8 +22,8 @@ $wgExtensionCredits['parserhook'][] = array(
 
 function wfStaffSig() {
     global $wgParser;
-
     $wgParser->setHook('staff', 'renderStaffSig');
+	return true;
 }
 
 function renderStaffSig() {
