@@ -5,7 +5,6 @@ if (!defined('MEDIAWIKI')) {
 }
 
 require_once( "AjaxResponse.php" );
-require_once( "SpecialUserlogin.php" );
 
 class AjaxLogin {
     function injectScripts( $out ) {
