@@ -10,11 +10,10 @@ if (!defined('MEDIAWIKI'))
 
 $wgExtensionCredits['other'][] = array(
 	'name' => 'AjaxLogin',
+	'author' => 'Misza',
 	'svn-date' => '$LastChangedDate$',
 	'svn-revision' => '$LastChangedRevision$',
 	'description' => 'Login/logout using AJAX instead of Special: pages',
-	#'descriptionmsg' => 'ajaxlogin-desc',
-	'author' => 'Misza',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:AjaxLogin',
 );
 

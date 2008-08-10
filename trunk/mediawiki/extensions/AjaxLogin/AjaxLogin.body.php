@@ -16,6 +16,7 @@ class AjaxLogin {
 
     function getLoginForm( ) {
         global $wgScriptPath;
+		wfLoadExtensionMessages( 'AjaxLogin' );
         return new AjaxResponse( "
 <div class='pBody'>
 <form id='ajaxloginForm' onsubmit='return AjaxLogin_submit_login()'>
@@ -25,7 +26,7 @@ class AjaxLogin {
 <input id='ajaxloginPassword' type='password' /><br/>
 <input type='submit' value=\"" . wfMsg( 'login' ) . "\" />
 </form>
-<a href='" . $wgScriptPath . "/index.php?title=Special:Userlogin&type=signup'><b>" . wfMsg( 'nologinlink' ) . "</b></a>
+<a href='" . $wgScriptPath . "/index.php?title=Special:Userlogin&type=signup'><b>" . wfMsg( 'ajaxlogin-nologinlink' ) . "</b></a>
 </div>
 " );
     }
